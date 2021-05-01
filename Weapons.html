@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  padding: 7px;
+  border-collapse: collapse;
+  border-spacing: 15px;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: tan;
+  color: black;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: tan;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.DivMargin {
+	margin: auto;
+	width: 70%;
+	padding: 10px;
+	line-height: 130%
+	}
+	
+.WeaponsTableDiv {
+	
+	}
+
+table.round {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: solid black 2px;
+  border-radius: 8px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+#headline {
+  font-size: 35px;
+  }
+
+td.center {
+	text-align: center;
+  }  
+
+</style>
+
+</head>
+
+<body style="background-color:lightgrey">
+
+<div class="navbar">
+  <a href="./Index.html">Home</a>
+	<div class="subnav">
+		<button class="subnavbtn">Sponsors<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="#Rutherford">Rutherford</a>
+		  <a href="#Miyazaki">Miyazaki</a>
+		  <a href="#Mishkin">Mishkin</a>
+		  <a href="#Idris">Idris</a>
+		  <a href="#Slime">Slime</a>
+		  <a href="#TheWarden">The Warden</a>
+		  <a href="#Scarlett">Scarlett</a>
+		  <a href="#HighwayPatrol">Highway Patrol</a>
+		  <a href="#Verney">Verney</a>
+		  <a href="#Maxxine">Maxxine</a>
+		  <a href="#TheOrderoftheInferno">The Order of the Inferno</a>
+		  <a href="#BeverlyTheDevilontheHighway">Beverly, The Devil on the Highway</a>
+		  <a href="#company">Rusty's Bootleggers</a>
+		</div>
+	</div>
+	<div>
+		<a href="./Vehicles.html">Vehicles</a>
+	</div>
+	<div class="subnav">
+		<button class="subnavbtn">Weapons<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="./Weapons.html">Weapons</a>
+		  <a href="./Crewweapons.html">Crew Weapons</a>
+		  <a href="./Droppedweapons.html">Dropped Weapons</a>
+		  <a href="./Weaponspecialrules.html">Special rules</a>
+		</div>
+	</div>
+	<div>
+		<a href="./Perks.html">Perks</a>
+	</div>
+	<div>
+		<a href="./Upgrades.html">Upgrades</a>
+	</div>
+	<div>
+		<a href="./Gearphases.html">Gear Phases</a>
+	</div>
+	<div>
+		<a href="./Collisions.html">Collisions</a>
+	</div>
+	<div>
+		<a href="./Print.html">Print</a>
+	</div>
+</div>
+
+
+<p id="headline" style="text-align: center; margin-bottom: 0;">
+<b>Weapons</b>
+</p>
+
+
+<div class="DivMargin">
+<br>
+
+<div class="WeaponsTableDiv">
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+		<table style="width:1300px; border: hidden;">
+			<tr>
+				<th>Weapon Name</th>
+				<th>Range</th> 
+				<th>Attack Dice</th>
+				<th>Special Rules</th>
+				<th>Build Slot cost</th>
+				<th>Cost</th>
+			</tr>
+			<tr>
+				<td>125mm Cannon</td>
+				<td class="center">Double</td>
+				<td class="center">8D6</td>
+				<td class="center">Ammo 3, Blast</td>
+				<td class="center">3</td>
+				<td class="center">6</td>
+			</tr>
+			<tr>
+				<td>Arc Lightning Projector</td>
+				<td class="center">Double</td>
+				<td class="center">6D6</td>
+				<td class="center">Ammo 1, Electrical</td>
+				<td class="center">2</td>
+				<td class="center">6</td>
+			</tr>
+			<tr>
+				<td>Bazooka</td>
+				<td class="center">Double</td>
+				<td class="center">3D6</td>
+				<td class="center">Ammo 3, Blast</td>
+				<td class="center">2</td>
+				<td class="center">4</td>
+			</tr>
+			<tr>
+				<td>BFG</td>
+				<td class="center">Double</td>
+				<td class="center">10D6</td>
+				<td class="center">Ammo 1</td>
+				<td class="center">3</td>
+				<td class="center">1</td>
+			</tr>
+			<tr>
+				<td>Combat Laser</td>
+				<td class="center">Double</td>
+				<td class="center">3D6</td>
+				<td class="center">Splash</td>
+				<td class="center">1</td>
+				<td class="center">5</td>
+			</tr>
+			<tr>
+				<td>Death Ray</td>
+				<td class="center">Double</td>
+				<td class="center">3D6</td>
+				<td class="center">Ammo 1, Electrical</td>
+				<td class="center">1</td>
+				<td class="center">3</td>
+			</tr>
+			<tr>
+				<td>Flamethrower</td>
+				<td class="center">Large Burst</td>
+				<td class="center">6D6</td>
+				<td class="center">Ammo 3, Splash, Fire, Indirect</td>
+				<td class="center">2</td>
+				<td class="center">4</td>
+			</tr>
+			<tr>
+				<td>Grabber Arm</td>
+				<td class="center">Short</td>
+				<td class="center">3D6</td>
+				<td class="center">-</td>
+				<td class="center">1</td>
+				<td class="center">6</td>
+			</tr>
+			<tr>
+				<td>Grav Gun</td>
+				<td class="center">Double</td>
+				<td class="center">3D6</td>
+				<td class="center">Ammo 1, Electrical</td>
+				<td class="center">1</td>
+				<td class="center">2</td>
+			</tr>
+			<tr>
+				<td>Harpoon</td>
+				<td class="center">Double</td>
+				<td class="center">5D6</td>
+				<td class="center">-</td>
+				<td class="center">1</td>
+				<td class="center">2</td>
+			</tr>
+			<tr>
+				<td>Heavy Machine Gun</td>
+				<td class="center">Double</td>
+				<td class="center">3D6</td>
+				<td class="center">-</td>
+				<td class="center">1</td>
+				<td class="center">3</td>
+			</tr>
+			<tr>
+				<td>Kinetic Super Booster</td>
+				<td class="center">Double</td>
+				<td class="center">6D6</td>
+				<td class="center">Ammo 1, Electrical</td>
+				<td class="center">2</td>
+				<td class="center">6</td>
+			</tr>
+			<tr>
+				<td>Machine Gun</td>
+				<td class="center">Double</td>
+				<td class="center">2D6</td>
+				<td class="center">-</td>
+				<td class="center">1</td>
+				<td class="center">2</td>
+			</tr>
+			<tr>
+				<td>Magnetic Jammer</td>
+				<td class="center">Double</td>
+				<td class="center">-</td>
+				<td class="center">Electrical</td>
+				<td class="center">-</td>
+				<td class="center">2</td>
+			</tr>
+			<tr>
+				<td>Minigun</td>
+				<td class="center">Double</td>
+				<td class="center">4D6</td>
+				<td class="center">-</td>
+				<td class="center">1</td>
+				<td class="center">5</td>
+			</tr>		
+			<tr>
+				<td>Mortar</td>
+				<td class="center">Double</td>
+				<td class="center">4D6</td>
+				<td class="center">Ammo 3, Indirect</td>
+				<td class="center">1</td>
+				<td class="center">4</td>
+			</tr>
+			<tr>
+				<td>Rockets</td>
+				<td class="center">Double</td>
+				<td class="center">6D6</td>
+				<td class="center">Ammo 3</td>
+				<td class="center">2</td>
+				<td class="center">5</td>
+			</tr>
+			<tr>
+				<td>Wall of Amplifiers</td>
+				<td class="center">Medium</td>
+				<td class="center">-</td>
+				<td class="center">360-degree</td>
+				<td class="center">3</td>
+				<td class="center">4</td>
+			</tr>
+			<tr>
+				<td>Wreck Lobber</td>
+				<td class="center">Double</td>
+				<td class="center">-</td>
+				<td class="center">Ammo 3</td>
+				<td class="center">4</td>
+				<td class="center">4</td>
+			</tr>
+			<tr>
+				<td>Wrecking Ball</td>
+				<td class="center">Short</td>
+				<td class="center">*</td>
+				<td class="center">-</td>
+				<td class="center">3</td>
+				<td class="center">2</td>
+			</tr>
+		</table>
+
+</td>
+</tr>
+</table>
+</div>
+
+</div>
+
+<br>
+<br>
+
+<div class="DivMargin">
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>125mm Cannon</h2>
+A tank gun is a rediculous  weapon for a civilian vehicle to carry. When fired, the active vehicle immediately gains 2 Hazard Tokens if it is not a tank.
+</td>
+</tr>
+</table>
+
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Arc Lightning Projector</h2>
+Mishkin sponsored teams only. The Arc Lightning Projector is a dangerous weapons that can arc electricity acress multiple conductive targets. 
+After damaging a target, this vehicle <b>must</b> immediately attack another target withing Short Range and 360-degree Arc of Fire of the current target (including this vehicle). 
+This chain-reaction continues until the weapon fails to damage a target, or there are no further viable targets.
+This vehicle can target friendly vehicles with the Arc Lightning Projector. This vehicle cannot target the same vehicle twice in a single Attack Step with the Arc Lightning Projector.
+</td>
+</tr>
+</table>
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>BFG</h2>
+When this weapon is fired, the vehicle makes an immediately forced move medium straight backwards, reduced to Gear 1 and gains 3 Hazard Tokens. Front mounted only.
+</td>
+</tr>
+</table>
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Death Ray</h2>
+Mishkin sponsored teams only. If this weapon scores five or more un-cancelled hits on the target during a single attack, instead of causing damage, the target car is immediately removed from play 
+(although it counts as having been Wrecked for the purposes of Audience Votes, scenario rules, ect.).
+</td>
+</tr>
+</table>
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Grabber Arm</h2>
+If this vehicle attacks a target vehicle of the same weight-class or lighter with the Grabber Arm and scores one or more un-cancelled hits, the controller of the active vehicle may place the target vehicle anywhere within Short Range of the target vehicle's original position.
+The target vehicle may be pivoted to face any direction. This movement causes a Collision Windows.
+</td>
+</tr>
+</table>
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Grav Gun</h2>
+Mishkin-sponsored teams only. If this weapon scores one or more un-cancelled hits on the target, instead of causing damage the attacking vehicle's controller must choose one of the following:
+until the end of the target's next activation the target counts as one weight class heavier or until the end of the target's next activation the target counts as one eight class lighter.
+</td>
+</tr>
+</table>
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Harpoon</h2>
+This weapon's hits do not cause damage. 
+Instead, the first un-cancelled hit on the target spins the target vehicle on the spot to either face directly away from or directly towards the attacking vehicle, whichever requires the smallest degree of rotation, as the harpoon catches and the chain goes taut.
+This triggers a Collision Window.
+The second and subsequent un-cancelled hits on the target then each cause the target to make a forced Short Straight move towards the attacker, as the harpoon reels the target in.
+If the target is a heavier weight class than the attacker, it is the attacking vehicle that is spun and moved towards the target vehicle instead.
+</td>
+</tr>
+</table>
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Kinetic Super Booster</h2>
+Mishkin-sponsored teams only. The Kinetic Super Booster is a bizarre electrical weapon that transfers a jolt of kinetic energy to the target. 
+The target of a Super Booster attack suffers no damage, but instead immediately increases its current Gear by on for every successful hit, without gaining Hazard Tokens.
+The Super Booster may not increase a vehicle's Gear beyond its max Gear.
+</td>
+</tr>
+</table>
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Magnetic Jammer</h2>
+Mishkin-sponsored teams only. The target vehicle may not discard Ammo Tokens during its next activation.
+</td>
+</tr>
+</table>
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Thumper</h2>
+Mishkin-sponsored teams only. This weapon does not need to declare a facing when purchased.
+The Thumper is a powerful sonic device that emits a shock wave that hurls nearby vehicles into the air. When this vehicle declares and attack with the Thumper,
+every other vehicle (friend or foe) within Medium Range of this vehicle in a 360-degree Arc of Fire immediately makes a Flip check, in which they count their current Gear as 2 higher, up to a maximum of 6.
+</td>
+</tr>
+</table>
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Wall of Amplifiers</h2>
+This weapon does not require a target. When fired, this weapon automatically causes one hit to <b>every</b> vehicle witin Medium Range and withina 360-degree Arc of Fire.
+These hits do not cause damage and may be Evaded.
+For each un-cancelled hit on a vehicle, choose one: either discard 1 Hazard Token from vehicle or add 1 Hazard Tokens to the vehicle.
+</td>
+</tr>
+</table>
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Wreck Lobber</h2>
+It was enevitable that someone would invent a gun that shoots cars instead of bullets.
+<br><b>Trebuchet:</b> The Wreck Lobber does not require a target. When it is fired, place a marker the size of a penny within Double Range of the Wreck Lobber's fire Arc.
+Roll a Skid Die.
+<br>On a Shift result: place the wreck of a car touching the marker and trigger a Collision Window.
+<br>On a Spin or Slide result: the player to the left of the active player must place the wreck anywhere within Short Range of the marker and trigger a Collision Window.
+<br>On a Hazard result: the player to the left of the active player must place the wreck touching the active vehicle and trigger a Collision Window.
+<br><b>Low-Loader:</b> If this vehicle collides with a wreck, it may gain 1 Ammo Token for the Wreck Lobber.
+<br><b>Dumper:</b> This vehicle may fire the Wreck Lobber as a rear-mounted dropped weapon instead of using the Trebuchet rules above. 
+In this case, the wreck of a car is placed touching the rear of the active vehicle, and no Collision Windows is triggered.
+</td>
+</tr>
+</table>
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Wrecking Ball</h2>
+This weapon does not require a target. When fired, this vehicle must immediately engage in a T-Bone Collision with every vehicle and Destructible obstacle withing Short Range of it,
+in a 360-degree Arc of Fire, in an order chosen by this vehicle's controller.
+During these Collisions, all vehicles involved count as having no weapons or perks except this one and all other vehicles must declare an Evade reaction.
+During each of these Collisions this vehicle gains 2 Smash Attack dice. This vehicle does not gain Hazard Tokens during these Collisions.
+Collisions triggered by the Wrecking Ball do not benefit from effects from upgrades, such as Rams or Exploding Rams.
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<br>
+</body>
+</html>

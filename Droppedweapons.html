@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  padding: 7px;
+  border-collapse: collapse;
+  border-spacing: 15px;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: tan;
+  color: black;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: tan;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.DivMargin {
+	margin: auto;
+	width: 70%;
+	padding: 10px;
+	line-height: 130%
+	}
+	
+.WeaponsTableDiv {
+	margin: 0cm 0cm 0cm 0.5cm;
+	}
+
+table.round {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: solid black 2px;
+  border-radius: 8px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+#headline {
+  font-size: 35px;
+  }
+
+td.center {
+	text-align: center;
+  }  
+
+</style>
+
+</head>
+
+<body style="background-color:lightgrey">
+
+<div class="navbar">
+  <a href="./Index.html">Home</a>
+	<div class="subnav">
+		<button class="subnavbtn">Sponsors<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="#Rutherford">Rutherford</a>
+		  <a href="#Miyazaki">Miyazaki</a>
+		  <a href="#Mishkin">Mishkin</a>
+		  <a href="#Idris">Idris</a>
+		  <a href="#Slime">Slime</a>
+		  <a href="#TheWarden">The Warden</a>
+		  <a href="#Scarlett">Scarlett</a>
+		  <a href="#HighwayPatrol">Highway Patrol</a>
+		  <a href="#Verney">Verney</a>
+		  <a href="#Maxxine">Maxxine</a>
+		  <a href="#TheOrderoftheInferno">The Order of the Inferno</a>
+		  <a href="#BeverlyTheDevilontheHighway">Beverly, The Devil on the Highway</a>
+		  <a href="#company">Rusty's Bootleggers</a>
+		</div>
+	</div>
+	<div>
+		<a href="./Vehicles.html">Vehicles</a>
+	</div>
+	<div class="subnav">
+		<button class="subnavbtn">Weapons<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="./Weapons.html">Weapons</a>
+		  <a href="./Crewweapons.html">Crew Weapons</a>
+		  <a href="./Droppedweapons.html">Dropped Weapons</a>
+		  <a href="./Weaponspecialrules.html">Special rules</a>
+		</div>
+	</div>
+	<div>
+		<a href="./Perks.html">Perks</a>
+	</div>
+	<div>
+		<a href="./Upgrades.html">Upgrades</a>
+	</div>
+	<div>
+		<a href="./Gearphases.html">Gear Phases</a>
+	</div>
+	<div>
+		<a href="./Collisions.html">Collisions</a>
+	</div>
+	<div>
+		<a href="./Print.html">Print</a>
+	</div>
+</div>
+
+<p id="headline" style="text-align: center; margin-bottom: 0;">
+<b>Dropped Weapons</b>
+</p>
+
+<div class="DivMargin">
+<br>
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+		<table style="width:1300px; border: hidden;">
+			<tr>
+				<th>Weapon Name</th>
+				<th>Range</th> 
+				<th>Attack Dice</th>
+				<th>Special Rules</th>
+				<th>Build Slot cost</th>
+				<th>Cost</th>
+			</tr>
+			<tr>
+				<td>Caltrop Dropper</td>
+				<td class="center">Dropped</td>
+				<td class="center">2D6</td>
+				<td class="center">Ammo 3, Small Burst</td>
+				<td class="center">1</td>
+				<td class="center">1</td>
+			</tr>
+			<tr>
+				<td>Glue Dropper</td>
+				<td class="center">Dropped</td>
+				<td class="center">-</td>
+				<td class="center">Ammo 1, Large Burst</td>
+				<td class="center">1</td>
+				<td class="center">1</td>
+			</tr>
+			<tr>
+				<td>Mine Dropper</td>
+				<td class="center">Dropped</td>
+				<td class="center">4D6</td>
+				<td class="center">Ammo 3, Small Burst, Blast</td>
+				<td class="center">1</td>
+				<td class="center">1</td>
+			</tr>
+			<tr>
+				<td>Napalm Dropper</td>
+				<td class="center">Dropped</td>
+				<td class="center">4D6</td>
+				<td class="center">Ammo 3, Small Burst, Fire</td>
+				<td class="center">1</td>
+				<td class="center">1</td>
+			</tr>
+			<tr>
+				<td>Oil Slick Dropper</td>
+				<td class="center">Dropped</td>
+				<td class="center">-</td>
+				<td class="center">Ammo 3, Large Burst</td>
+				<td class="center">-</td>
+				<td class="center">2</td>
+			</tr>
+			<tr>
+				<td>RC Car Bombs</td>
+				<td class="center">Dropped</td>
+				<td class="center">4D6</td>
+				<td class="center">Ammo 3</td>
+				<td class="center">-</td>
+				<td class="center">3</td>
+			</tr>
+			<tr>
+				<td>Sentry Gun</td>
+				<td class="center">Dropped</td>
+				<td class="center">2D6</td>
+				<td class="center">Ammo 3</td>
+				<td class="center">-</td>
+				<td class="center">3</td>
+			</tr>
+			<tr>
+				<td>Smoke Dropper</td>
+				<td class="center">Dropped</td>
+				<td class="center">-</td>
+				<td class="center">Ammo 3, Large Burst</td>
+				<td class="center">-</td>
+				<td class="center">1</td>
+			</tr>
+		</table>
+</td>
+</tr>
+</table>
+
+</div>
+
+
+<br>
+
+
+
+<div class="DivMargin">
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Caltrop Dropper</h2>
+The dropped weapon teamplate for this dropped weapon counts as a treacherous surface. The first vehicle affected by this weapon is attacked with a 2D6 attack, then remove the Caltrops template from play.
+<br><b>Treacherous Surface: </b>If any part of a vehicle's movement template or Final Position (after resolving all Skid Dice) overlaps a treacherous surface. the vehicle gains 2 Hazard Tokens at the end of its Movement Step.
+</td>
+</tr>
+</table>
+
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Glue Dropper</h2>
+The dropped weapon template for the Glue Dropper counts as a treacherous surface. Any vehicle affected by this weapon must reduce its current Gear by 2 at the end of their Movement Step.
+A single vehicle may not be affected by this weapon two activations in a row.
+<br><b>Treacherous Surface: </b>If any part of a vehicle's movement template or Final Position (after resolving all Skid Dice) overlaps a treacherous surface. the vehicle gains 2 Hazard Tokens at the end of its Movement Step.
+</td>
+</tr>
+</table>
+
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Mine Dropper</h2>
+The first vehicle affected by this weapon is attacked with a 4D6 attack witth Blast, then remove the Mine's template from play.
+<br><b>Blast: </b>For every un-canceled hit caused by a weapon or effect with the Blast rule, the target immediately gains 1 Hazard Token.
+</td>
+</tr>
+</table>
+
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Napalm Dropper</h2>
+The first vehicle affected by this weapon is attacked with a 4D6 attack with Fire, then remove the Napalm template from play.
+<br><b>Fire: </b>If a vehicle suffers at least one damage from a weapon or effect with the Fire special rule, it gains the On-Fire rule in addition to suffering damage.
+A vehicle cannot gain the On-Fire rule a second time.
+<br><b>On Fire: </b>At the start of this vehicle's activation, it loses 1 Hull Point. This vehicle's Smash Attacks count as having the Fire special rule. 
+If this vehicle ever has zero Hazard Tokens, the fire goes out and this vehicle loses the On-Fire rule.
+</td>
+</tr>
+</table>
+
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Oil Slick Dropper</h2>
+The dropped weapon template for the Oil Slick Dropper counts as a treacherous surface.
+<br><b>Treacherous Surface: </b>If any part of a vehicle's movement template or Final Position (after resolving all Skid Dice) overlaps a treacherous surface, the vehicle gains 2 Hazard Tokens at the end of its Movement Step.
+</td>
+</tr>
+</table>
+
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>RC Car Bombs</h2>
+Bombs are taped to remote-controlled cars, which are dropped from  a vehicle and then piloted to impact.
+When attacking with this dropped weapon, place a RC Car (use a tiny car miniature, no larger than 20mm square) so that it is within Short Range of the attacking vehicle, and facing in any direction.
+This placement triggers a Collision Windows. The RC Car counts as a lightweight vehicle in current Gear 3 with 1 Hull Point, 1 Crew and 0 Handling.
+This tiny car can make shooting attacks but cannot change Gear. Although controlled by the player that dropped it, the RC Car does not count as part of the player's team, and so cannot be used for the purposes of scenario rules, Audience Votes, or Perks.
+If the RC Car is involved in a Collision, it suffers one damage before the Collision is resolved. When the RC Car would be Wrecked, it instead explodes. When the RC Car explodes, it rolls 4D6 attack dice, as if it were a middleweight vehicle.
+If the RC Car wipes out, it suffers one damage before the Wipeout is resolved.
+</td>
+</tr>
+</table>
+
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Sentry Gun</h2>
+When attacking with this dropped weapon, place a Sentry Gun so that it is within Short Range of the attacking vehicle. The Sentry Gun remains in play as a lightweight destructible obstacle.
+They may be targeted with shooting attacks and have 2 hull points. This Sentry Gun automatically makes a 2D6 shooting attack against any vehicle that ends their Movement Step within Medium Range of the Sentry Gun in a 360-degree Arc of Fire.
+The target may Evade as normal. This Sentry Gun will never target vehicles from the team of the vehicle that dropped it. Although controlled by the player that dropped it, the Sentry Gun does not count as part of the player's team, and so cannot be used for the purposes of scenario rules, Audience Votes, or Perks.
+</td>
+</tr>
+</table>
+
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Smoke Dropper</h2>
+This dropped weapon template counts as an obstruction for the purposes of termining Cover. Whilst a vehicle is in contact with this dropped weapon template, that vehicle counts as distracted.
+If any part of a vehicle's movement template or Final Position touches this dropped weapon template, the vehicle gains 1 Hazard Token at the end of its Movement Step.
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<br>
+
+</body>
+</html>

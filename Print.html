@@ -1,0 +1,2019 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head> 
+<title>Gaslands</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  padding: 7px;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: tan;
+  color: black;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: tan;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+
+	
+#car1_upgrade5_label {
+	display: none;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}
+	
+#car1_upgrade5_select {
+	display: none;
+	padding: 7px;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}
+	
+#car1_upgrade6_label {
+	display: none;
+	padding: 7px;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}	
+	
+	
+#car1_upgrade6_select {
+	display: none;
+	padding: 7px;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}	
+	
+#car1_upgrade7_label {
+	display: none;
+	padding: 7px;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}	
+	
+	
+#car1_upgrade7_select {
+	display: none;
+	padding: 7px;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}	
+	
+	
+.DivMargin {
+	margin: auto;
+	width: 100%;
+	}
+	
+.WeaponsTableDiv {
+	margin: auto;
+	width: 100%;
+	border-collapse: collapse;
+	
+	}	
+	
+	
+#DivShowCar1 {
+
+   }
+	
+#DivShowCar2 {
+   display: none;
+   }
+
+#DivShowCar3 {
+   display: none;
+   }
+   
+#DivShowCar4 {
+   display: none;
+   }
+
+#CarNameTable {
+  border: none;
+  border-collapse: collapse;
+   }	
+	
+#testDIV {
+  display: none;
+  } 
+
+#car1_hp1	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp2	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp3	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp4	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp5	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp6	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp7	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp8	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp9	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp10	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp11	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp12	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp13	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp14	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp15	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp16	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp17	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp18	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp19	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp20	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp21	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp22	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp23	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp24	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp25	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp26	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp27	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp28	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp29	{
+	display: none;
+	text-align: center;
+}
+
+#car1_hp30	{
+	display: none;
+	text-align: center;
+}
+
+#car1_frontweapon_DivAmmo1 {
+	display: none;
+}
+
+#car1_frontweapon_DivAmmo3 {
+	display: none;
+}
+
+#car1_frontweapon_DivAmmo5 {
+	display: none;
+}
+
+#car1_sideweapon_DivAmmo1 {
+	display: none;
+}
+
+#car1_sideweapon_DivAmmo3 {
+	display: none;
+}
+
+#car1_sideweapon_DivAmmo5 {
+	display: none;
+}
+
+#car1_rearweapon_DivAmmo1 {
+	display: none;
+}
+
+#car1_rearweapon_DivAmmo3 {
+	display: none;
+}
+
+#car1_rearweapon_DivAmmo5 {
+	display: none;
+}
+
+#car1_crew1_weapon_DivAmmo1 {
+	display: none;
+}
+
+#car1_crew1_weapon_DivAmmo3 {
+	display: none;
+}
+
+#car1_crew1_weapon_DivAmmo5 {
+	display: none;
+}
+
+table.round {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: solid black 2px;
+  border-radius: 8px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+table.round1 {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: solid black 2px;
+  border-radius: 8px;
+ }
+  
+table.round2 {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: solid black 2px;
+  border-radius: 8px;
+ }  
+
+td.center {
+	text-align: center;
+  }
+  
+.stats {
+	width: 240px;
+	border: none;
+}
+
+
+.stats2 {
+	border: none;
+	text-align: left;
+	
+}
+
+.stats3 {
+	border: none;
+	text-align: right;
+	
+}
+
+#car1_button_reset {
+	background-color: lightgrey;
+	color: black;
+	border: none;
+	padding: 15px 52px;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+}
+
+#car2_button_reset {
+	background-color: lightgrey;
+	color: black;
+	border: none;
+  	padding: 15px 52px;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+}
+
+#car3_button_reset {
+	background-color: lightgrey;
+	color: black;
+	border: none;
+  	padding: 15px 52px;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+}
+
+#car4_button_reset {
+	background-color: lightgrey;
+	color: black;
+	border: none;
+  	padding: 15px 52px;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+}
+
+#headline {
+	font-size: 35px;
+}
+
+
+@media print {
+   .noprint {
+		visibility: hidden;
+	}
+}
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="noprint" style="text-align: center;">
+
+		<p>
+		<input type="file"  accept="image/*" name="image1" id="file1"  onchange="loadFile1(event)" style="display: none;">
+		<label for="file1" style="cursor: pointer;">Upload Image (300x160px)</label>
+		</p>
+
+	</div>
+
+<div>
+
+
+
+<table class="round" style="background-color:white;">
+	<tr style="border: none">
+		<td style="border: none">
+		
+	
+<table style="border: none">
+	<tr style="border: none">
+		<td colspan="5" style="width: 542px; text-align: center; border-top: none; border-left: none; border-right: none; padding-left: 65px;">
+		<input type="text" style="border: none; border-radius: 5px; width: 200px; height: 30px; font-size: 25px;" value="Vehicle Name.." onclick="this.select()">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"style="width: 130px; border: none; text-align: center;">
+		<b><p id="car1_type_result" style="margin: 0;"></p></b>
+		</td>		
+		<td style="border: none;" rowspan="5">
+
+		<p style="margin: 0;">
+		<img id="output1" src="defaultcar.jpg" width="300" height="160" style="border: none; text-decoration: none; outline: none;"/>
+		</p>
+		
+		</td>
+		<td style="border: none; text-align: center;">
+		Hull Points:
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none;">
+		Handling:
+		</td>
+		<td style="border: none;">
+		<p id="car1_handlingmax_result" style="margin: 0;">0</p>
+		</td>
+		<td rowspan="4" style="border: none; width: 130px; vertical-align: top; text-align: left;">
+<div>
+		<div id="car1_hp1">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp2">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp3">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp4">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp5">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp6">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp7">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp8">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp9">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp10">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp11">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp12">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp13">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp14">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp15">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp16">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp17">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp18">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp19">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp20">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp21">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp22">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp23">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp24">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp25">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp26">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp27">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp28">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp29">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<div id="car1_hp30">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+</div>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none;">
+			Crew:
+		</td>
+		<td style="border: none;">
+		<p id="car1_crewmax_result" style="margin: 0;">0</p>
+		</td>
+	</tr>	
+	<tr>
+		<td style="border: none;">
+			Max Gear:
+		</td>
+		<td style="border: none;">
+		<p id="car1_gearmax_result" style="margin: 0;">0</p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="border: none; text-align: center;">
+		<p id="car1_weightclass_result" style="margin-bottom: 0; margin-top: 0; vertical-align: bottom;"></p>
+		</td>
+	</tr>
+</table>
+
+<table style="border-left: none; border-right: none; border-bottom: none;">
+	<tr style="border: none;">
+		<td colspan="4" style="width: 139px; border-left: none; border-right: none; border-top: none; border-bottom: none; text-align: center; font-size: 12px;">
+		Upgrades:
+		</td>
+	</tr>
+	
+	<tr style="border: none;">
+		<td style="width: 139px; border-left: none; border-right: none; border-top: none; text-align: center;">
+		<p id="car1_upgrade1_result" style="margin-bottom: 0; margin-top: 0; font-size: 14px">"></p>
+		</td>
+		<td style="width: 139px; border-left: none; border-right: none; border-top: none; text-align: center;">
+		<p id="car1_upgrade2_result" style="margin-bottom: 0; margin-top: 0; font-size: 14px">"></p>
+		</td>
+		<td style="width: 139px; border-left: none; border-right: none; border-top: none; text-align: center;">
+		<p id="car1_upgrade3_result" style="margin-bottom: 0; margin-top: 0; font-size: 14px">"></p>
+		</td>
+		<td style="width: 139px; border-left: none; border-right: none; border-top: none; text-align: center;">
+		<p id="car1_upgrade4_result" style="margin-bottom: 0; margin-top: 0; font-size: 14px">"></p>
+		</td>
+		</tr>
+		<tr>
+	
+		<td style="width: 139px; border: none; text-align: center;">
+		<i><p id="car1_frontweapon_tm_result" style="margin-bottom: 0; margin-top: 0;"></p></i>
+		</td>
+		<td style="width: 139px; border: none; text-align: center;">
+		<i><p id="car1_sideweapon_tm_result" style="margin-bottom: 0; margin-top: 0;"></p></i>
+		</td>
+		<td style="width: 139px; border: none; text-align: center;">
+		<i><p id="car1_rearweapon_tm_result" style="margin-bottom: 0; margin-top: 0;"></p></i>
+		</td>
+		<td style="width: 139px; border: none; text-align: center;">
+			<i>Crew weapons:</i>
+		</td>
+	</tr>
+		<tr style="border: none;">
+	
+		<td id="car1_frontweapon_result" style="width: 139px; border: none; text-align: center; vertical-align: bottom; font-size: 13px">
+		
+		</td>
+		<td id="car1_sideweapon_result" style="width: 139px; border: none; text-align: center; vertical-align: bottom; font-size: 13px">
+		
+		</td>
+		<td id="car1_rearweapon_result" style="width: 139px; border: none; text-align: center; vertical-align: bottom; font-size: 13px">
+		
+		</td>
+		<td id="car1_crew1_weapon_result" style="width: 139px; border: none; text-align: center; vertical-align: bottom; font-size: 13px">
+		
+		</td>
+	</tr>
+	<tr>
+	
+	<td style="border: none; text-align: center;">
+	<div id="car1_frontweapon_DivAmmo1">
+	<input type="checkbox">
+	</div>
+	<div id="car1_frontweapon_DivAmmo3">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	</div>
+	<div id="car1_frontweapon_DivAmmo5">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	</div>
+	</td>
+	<td style="border: none; text-align: center;">
+	<div id="car1_sideweapon_DivAmmo1">
+	<input type="checkbox">
+	</div>
+	<div id="car1_sideweapon_DivAmmo3">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	</div>
+	<div id="car1_sideweapon_DivAmmo5">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	</div>
+	</td>
+	<td style="border: none; text-align: center;">
+	<div id="car1_rearweapon_DivAmmo1">
+	<input type="checkbox">
+	</div>
+	<div id="car1_rearweapon_DivAmmo3">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	</div>
+	<div id="car1_rearweapon_DivAmmo5">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	</div>
+	</td>
+	<td style="border: none; text-align: center;">
+	<div id="car1_crew1_weapon_DivAmmo1">
+	<input type="checkbox">
+	</div>
+	<div id="car1_crew1_weapon_DivAmmo3">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	</div>
+	<div id="car1_crew1_weapon_DivAmmo5">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	</div>
+	</td>
+	</tr>
+</table>
+
+
+		</td>
+	</tr>
+</table>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="noprint" style="text-align:center;">
+
+		<p>
+		<input type="file"  accept="image/*" name="image2" id="file2"  onchange="loadFile2(event)" style="display: none;">
+		<label for="file2" style="cursor: pointer;">Upload Image</label>
+		</p>
+
+	</div>
+
+<div>
+
+	
+
+<table class="round" style="background-color:white;">
+	<tr style="border: none">
+		<td style="border: none">
+		
+	
+<table style="border: none">
+	<tr style="border: none">
+		<td colspan="5" style="text-align: center; border-top: none; border-left: none; border-right: none;">
+		<i>Car name</i>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"style="width: 130px; border: none; text-align: center;">
+		<b>Performance Car</b>
+		</td>		
+		<td style="border: none;" rowspan="5">
+
+		<p style="margin: 0;">
+		<img id="output2" src="defaultcar.jpg" width="300" height="160" style="border: none; text-decoration: none; outline: none;"/>
+		</p>
+		
+		</td>
+		<td style="border: none; text-align: center;">
+		Hull Points:
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none;">
+		Handling:
+		</td>
+		<td style="border: none;">
+		<p id="car1_maxhandling_result" style="margin-bottom: 0; margin-top: 0;">4</p>
+		</td>
+		<td rowspan="4" style="border: none; width: 130px; vertical-align: top; text-align: left;">
+		<br>
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none;">
+			Crew:
+		</td>
+		<td style="border: none;">
+		<p id="car1_maxcrew_result" style="margin-bottom: 0; margin-top: 0;">2</p>
+		</td>
+	</tr>	
+	<tr>
+		<td style="border: none;">
+			Max Gear:
+		</td>
+		<td style="border: none;">
+		<p id="car1_maxgear_result" style="margin-bottom: 0; margin-top: 0;">6</p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="border: none; text-align: center;">
+		<p id="car1_weightclass_print_result" style="margin-bottom: 0; margin-top: 0; vertical-align: bottom;">Middleweight</p>
+		</td>
+	</tr>
+</table>
+
+<table style="border-left: none; border-right: none; border-bottom: none;"
+	<tr style="border: none;">
+		<td style="width: 139px; border: none; text-align: center;">
+			<i>Frontweapon:</i>
+		</td>
+		<td style="width: 139px; border: none; text-align: center;">
+			<i>Sideweapon:</i>
+		</td>
+		<td style="width: 139px; border: none; text-align: center;">
+			<i>Rearweapon:</i>
+		</td>
+		<td style="width: 139px; border: none; text-align: center;">
+			<i>Crew weapons:</i>
+		</td>
+	</tr>
+	<tr style="border: none;">
+		<td style="width: 139px; border: none; text-align: center; vertical-align: top;">
+		Machine Gun
+		</td>
+		<td style="width: 139px; border: none; text-align: center; vertical-align: top;">
+		None
+		</td>
+		<td style="width: 139px; border: none; text-align: center; vertical-align: top;">
+		Caltrop Dropper
+		<br>
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		
+		</td>
+		<td style="width: 139px; border: none; text-align: center; vertical-align: top;">
+		Handguns
+		</td>
+	</tr>
+</table>
+
+
+		</td>
+	</tr>
+</table>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!--
+
+<div class="noprint" style="text-align:center;">
+
+		<p>
+		<input type="file"  accept="image/*" name="image3" id="file3"  onchange="loadFile3(event)" style="display: none;">
+		<label for="file3" style="cursor: pointer;">Upload Image</label>
+		</p>
+
+	</div>
+
+<div>
+
+	
+
+<table class="round" style="background-color:white;">
+	<tr style="border: none">
+		<td style="border: none">
+		
+	
+<table style="border: none">
+	<tr style="border: none">
+		<td colspan="5" style="text-align: center; border-top: none; border-left: none; border-right: none;">
+		<i>Car name</i>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"style="width: 130px; border: none; text-align: center;">
+		<b>Performance Car</b>
+		</td>		
+		<td style="border: none;" rowspan="5">
+
+		<p style="margin: 0;">
+		<img id="output3" src="defaultcar.jpg" width="300" height="160" style="border: none; text-decoration: none; outline: none;"/>
+		</p>
+		
+		</td>
+		<td style="border: none; text-align: center;">
+		Hull Points:
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none;">
+		Handling:
+		</td>
+		<td style="border: none;">
+		<p id="car1_maxhandling_result" style="margin-bottom: 0; margin-top: 0;">4</p>
+		</td>
+		<td rowspan="4" style="border: none; width: 130px; vertical-align: top; text-align: left;">
+		<br>
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none;">
+			Crew:
+		</td>
+		<td style="border: none;">
+		<p id="car1_maxcrew_result" style="margin-bottom: 0; margin-top: 0;">2</p>
+		</td>
+	</tr>	
+	<tr>
+		<td style="border: none;">
+			Max Gear:
+		</td>
+		<td style="border: none;">
+		<p id="car1_maxgear_result" style="margin-bottom: 0; margin-top: 0;">6</p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="border: none; text-align: center;">
+		<p id="car1_weightclass_print_result" style="margin-bottom: 0; margin-top: 0; vertical-align: bottom;">Middleweight</p>
+		</td>
+	</tr>
+</table>
+
+<table style="border-left: none; border-right: none; border-bottom: none;"
+	<tr style="border: none;">
+		<td style="width: 139px; border: none; text-align: center;">
+			<i>Frontweapon:</i>
+		</td>
+		<td style="width: 139px; border: none; text-align: center;">
+			<i>Sideweapon:</i>
+		</td>
+		<td style="width: 139px; border: none; text-align: center;">
+			<i>Rearweapon:</i>
+		</td>
+		<td style="width: 139px; border: none; text-align: center;">
+			<i>Crew weapons:</i>
+		</td>
+	</tr>
+	<tr style="border: none;">
+		<td style="width: 139px; border: none; text-align: center; vertical-align: top;">
+		Machine Gun
+		</td>
+		<td style="width: 139px; border: none; text-align: center; vertical-align: top;">
+		None
+		</td>
+		<td style="width: 139px; border: none; text-align: center; vertical-align: top;">
+		Caltrop Dropper
+		<br>
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		
+		</td>
+		<td style="width: 139px; border: none; text-align: center; vertical-align: top;">
+		Handguns
+		</td>
+	</tr>
+</table>
+
+
+		</td>
+	</tr>
+</table>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="noprint" style="text-align:center;">
+
+		<p>
+		<input type="file"  accept="image/*" name="image4" id="file4"  onchange="loadFile4(event)" style="display: none;">
+		<label for="file4" style="cursor: pointer;">Upload Image</label>
+		</p>
+
+	</div>
+
+<div>
+
+	
+
+<table class="round" style="background-color:white;">
+	<tr style="border: none">
+		<td style="border: none">
+		
+	
+<table style="border: none">
+	<tr style="border: none">
+		<td colspan="5" style="text-align: center; border-top: none; border-left: none; border-right: none;">
+		<i>Car name</i>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"style="width: 130px; border: none; text-align: center;">
+		<b>Performance Car</b>
+		</td>		
+		<td style="border: none;" rowspan="5">
+
+		<p style="margin: 0;">
+		<img id="output4" src="defaultcar.jpg" width="300" height="160" style="border: none; text-decoration: none; outline: none;"/>
+		</p>
+		
+		</td>
+		<td style="border: none; text-align: center;">
+		Hull Points:
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none;">
+		Handling:
+		</td>
+		<td style="border: none;">
+		<p id="car1_maxhandling_result" style="margin-bottom: 0; margin-top: 0;">4</p>
+		</td>
+		<td rowspan="4" style="border: none; width: 130px; vertical-align: top; text-align: left;">
+		<br>
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		</td>
+	</tr>
+	<tr>
+		<td style="border: none;">
+			Crew:
+		</td>
+		<td style="border: none;">
+		<p id="car1_maxcrew_result" style="margin-bottom: 0; margin-top: 0;">2</p>
+		</td>
+	</tr>	
+	<tr>
+		<td style="border: none;">
+			Max Gear:
+		</td>
+		<td style="border: none;">
+		<p id="car1_maxgear_result" style="margin-bottom: 0; margin-top: 0;">6</p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="border: none; text-align: center;">
+		<p id="car1_weightclass_print_result" style="margin-bottom: 0; margin-top: 0; vertical-align: bottom;">Middleweight</p>
+		</td>
+	</tr>
+</table>
+
+<table style="border-left: none; border-right: none; border-bottom: none;"
+	<tr style="border: none;">
+		<td style="width: 139px; border: none; text-align: center;">
+			<i>Frontweapon:</i>
+		</td>
+		<td style="width: 139px; border: none; text-align: center;">
+			<i>Sideweapon:</i>
+		</td>
+		<td style="width: 139px; border: none; text-align: center;">
+			<i>Rearweapon:</i>
+		</td>
+		<td style="width: 139px; border: none; text-align: center;">
+			<i>Crew weapons:</i>
+		</td>
+	</tr>
+	<tr style="border: none;">
+		<td style="width: 139px; border: none; text-align: center; vertical-align: top;">
+		Machine Gun
+		</td>
+		<td style="width: 139px; border: none; text-align: center; vertical-align: top;">
+		None
+		</td>
+		<td style="width: 139px; border: none; text-align: center; vertical-align: top;">
+		Caltrop Dropper
+		<br>
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		
+		</td>
+		<td style="width: 139px; border: none; text-align: center; vertical-align: top;">
+		Handguns
+		</td>
+	</tr>
+</table>
+
+
+		</td>
+	</tr>
+</table>
+</div>
+-->
+
+
+<script>
+
+var loadFile1 = function(event) {
+	var image1 = document.getElementById('output1')
+	image1.src = URL.createObjectURL(event.target.files[0]);
+};
+
+var loadFile2 = function(event) {
+	var image2 = document.getElementById('output2')
+	image2.src = URL.createObjectURL(event.target.files[0]);
+};
+
+var loadFile3 = function(event) {
+	var image3 = document.getElementById('output3')
+	image3.src = URL.createObjectURL(event.target.files[0]);
+};
+
+var loadFile4 = function(event) {
+	var image4 = document.getElementById('output4')
+	image4.src = URL.createObjectURL(event.target.files[0]);
+};
+
+
+var car1_type_var = localStorage.getItem("local_car1_type");
+document.getElementById("car1_type_result").innerHTML = car1_type_var;
+
+var car1_weightclass_var = localStorage.getItem("local_car1_weightclass");
+document.getElementById("car1_weightclass_result").innerHTML = car1_weightclass_var;
+
+var car1_handlingmax_var = localStorage.getItem("local_car1_handlingmax");
+document.getElementById("car1_handlingmax_result").innerHTML = car1_handlingmax_var;
+
+var car1_crewmax_var = localStorage.getItem("local_car1_crewmax");
+document.getElementById("car1_crewmax_result").innerHTML = car1_crewmax_var;
+
+var car1_gearmax_var = localStorage.getItem("local_car1_gearmax");
+document.getElementById("car1_gearmax_result").innerHTML = car1_gearmax_var;
+
+var car1_frontweaponvar = localStorage.getItem("local_car1_frontweapon");
+document.getElementById("car1_frontweapon_result").innerHTML = car1_frontweaponvar;
+
+var car1_sideweaponvar = localStorage.getItem("local_car1_sideweapon");
+document.getElementById("car1_sideweapon_result").innerHTML = car1_sideweaponvar;
+
+var car1_rearweaponvar = localStorage.getItem("local_car1_rearweapon");
+document.getElementById("car1_rearweapon_result").innerHTML = car1_rearweaponvar;
+
+var car1_crew1_weaponvar = localStorage.getItem("local_car1_crew1_weapon");
+document.getElementById("car1_crew1_weapon_result").innerHTML = car1_crew1_weaponvar;
+
+var car1_upgrade1var = localStorage.getItem("local_car1_upgrade1");
+document.getElementById("car1_upgrade1_result").innerHTML = car1_upgrade1var;
+
+var car1_upgrade2var = localStorage.getItem("local_car1_upgrade2");
+document.getElementById("car1_upgrade2_result").innerHTML = car1_upgrade2var;
+
+var car1_upgrade3var = localStorage.getItem("local_car1_upgrade3");
+document.getElementById("car1_upgrade3_result").innerHTML = car1_upgrade3var;
+
+var car1_upgrade4var = localStorage.getItem("local_car1_upgrade4");
+document.getElementById("car1_upgrade4_result").innerHTML = car1_upgrade4var;
+
+var car1_maxhullpoints_var = localStorage.getItem("local_car1_maxhullpoints");
+
+var car1_frontweapon_tmvar = localStorage.getItem("local_car1_frontweapon_tm");
+
+var car1_sideweapon_tmvar = localStorage.getItem("local_car1_sideweapon_tm");
+
+var car1_rearweapon_tmvar = localStorage.getItem("local_car1_rearweapon_tm");
+
+switch (car1_frontweapon_tmvar) {
+		case "positive":
+			document.getElementById("car1_frontweapon_tm_result").innerHTML = "Turret mounted:";
+		break;
+		case "negative":
+			document.getElementById("car1_frontweapon_tm_result").innerHTML = "Front mounted:";
+		break;
+		
+	}
+	
+switch (car1_sideweapon_tmvar) {
+		case "positive":
+			document.getElementById("car1_sideweapon_tm_result").innerHTML = "Turret mounted:";
+		break;
+		case "negative":
+			document.getElementById("car1_sideweapon_tm_result").innerHTML = "Side mounted:";
+		break;
+		
+	}
+	
+switch (car1_rearweapon_tmvar) {
+		case "positive":
+			document.getElementById("car1_rearweapon_tm_result").innerHTML = "Turret mounted:";
+		break;
+		case "negative":
+			document.getElementById("car1_rearweapon_tm_result").innerHTML = "Rear mounted:";
+		break;
+		
+	}
+
+switch (parseInt(car1_maxhullpoints_var)) {
+		case 0:
+			
+		break;
+		case 1:
+			car1_hp1.style.display = "block";
+		break;
+		case 2:
+			car1_hp2.style.display = "block";
+		break;
+		case 3:
+			car1_hp3.style.display = "block";
+		break;
+		case 4:
+			car1_hp4.style.display = "block";
+		break
+		case 5:
+			car1_hp5.style.display = "block";
+		break;
+		case 6:
+			car1_hp6.style.display = "block";
+		break;
+		case 7:
+			car1_hp7.style.display = "block";
+		break;
+		case 8:
+			car1_hp8.style.display = "block";
+		break;
+		case 9:
+			car1_hp9.style.display = "block";
+		break;
+		case 10:
+			car1_hp10.style.display = "block";
+		break;
+		case 11:
+			car1_hp11.style.display = "block";
+		break;
+		case 12:
+			car1_hp12.style.display = "block";
+		break;
+		case 13:
+			car1_hp13.style.display = "block";
+		break;
+		case 14:
+			car1_hp14.style.display = "block";
+		break;
+		case 15:
+			car1_hp15.style.display = "block";
+		break;
+		case 16:
+			car1_hp16.style.display = "block";
+		break;
+		case 17:
+			car1_hp17.style.display = "block";
+		break;
+		case 18:
+			car1_hp18.style.display = "block";
+		break;
+		case 19:
+			car1_hp19.style.display = "block";
+		break;
+		case 20:
+			car1_hp20.style.display = "block";
+		break;
+		case 21:
+			car1_hp21.style.display = "block";
+		break;
+		case 22:
+			car1_hp22.style.display = "block";
+		break;
+		case 23:
+			car1_hp23.style.display = "block";
+		break;
+		case 24:
+			car1_hp24.style.display = "block";
+		break;
+		case 25:
+			car1_hp25.style.display = "block";
+		break;
+		case 26:
+			car1_hp26.style.display = "block";
+		break;
+		case 27:
+			car1_hp27.style.display = "block";
+		break;
+		case 28:
+			car1_hp28.style.display = "block";
+		break;
+		case 29:
+			car1_hp29.style.display = "block";
+		break;
+		case 30:
+			car1_hp30.style.display = "block";
+		break;
+		
+		default:
+
+		break;
+	}
+
+switch (car1_frontweaponvar) {
+		case "125mm Cannon 8D6":
+			car1_frontweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Bazooka 3D6":
+			car1_frontweapon_DivAmmo3.style.display = "block";
+		break;
+		case "BFG 10D6":
+			car1_frontweapon_DivAmmo1.style.display = "block";
+		break;
+		case "Flamethrower 6D6":
+			car1_frontweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Mortar 4D6":
+			car1_frontweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Rockets 6D6":
+			car1_frontweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Wreck Lobber":
+			car1_frontweapon_DivAmmo3.style.display = "block";
+		break;
+		default:
+		break;
+	}
+	
+switch (car1_sideweaponvar) {
+		case "125mm Cannon 8D6":
+			car1_sideweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Bazooka 3D6":
+			car1_sideweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Flamethrower 6D6":
+			car1_sideweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Mortar 4D6":
+			car1_sideweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Rockets 6D6":
+			car1_sideweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Wreck Lobber":
+			car1_sideweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Caltrop Dropper 2D6":
+			car1_sideweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Glue Dropper":
+			car1_sideweapon_DivAmmo1.style.display = "block";
+		break;
+		case "Mine Dropper 4D6":
+			car1_sideweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Napalm Dropper 4D6":
+			car1_sideweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Oil Slick Dropper":
+			car1_sideweapon_DivAmmo3.style.display = "block";
+		break;
+		case "RC Car Bombs 4D6":
+			car1_sideweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Sentry Gun 2D6":
+			car1_sideweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Smoke Dropper":
+			car1_sideweapon_DivAmmo3.style.display = "block";
+		break;
+		default:
+		break;
+	}
+	
+switch (car1_rearweaponvar) {
+		case "125mm Cannon 8D6":
+			car1_rearweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Bazooka 3D6":
+			car1_rearweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Flamethrower 6D6":
+			car1_rearweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Mortar 4D6":
+			car1_rearweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Rockets 6D6":
+			car1_rearweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Wreck Lobber":
+			car1_rearweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Caltrop Dropper 2D6":
+			car1_rearweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Glue Dropper":
+			car1_rearweapon_DivAmmo1.style.display = "block";
+		break;
+		case "Mine Dropper 4D6":
+			car1_rearweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Napalm Dropper 4D6":
+			car1_rearweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Oil Slick Dropper":
+			car1_rearweapon_DivAmmo3.style.display = "block";
+		break;
+		case "RC Car Bombs 4D6":
+			car1_rearweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Sentry Gun 2D6":
+			car1_rearweapon_DivAmmo3.style.display = "block";
+		break;
+		case "Smoke Dropper":
+			car1_rearweapon_DivAmmo3.style.display = "block";
+		break;
+		default:
+		break;
+	}
+
+switch (car1_crew1_weaponvar) {
+		case "Gas Grenades 1D6":
+			car1_crew1_weapon_DivAmmo5.style.display = "block";
+		break;
+		case "Grenades 1D6":
+			car1_crew1_weapon_DivAmmo5.style.display = "block";
+		break;
+		case "Molotov Cocktails 1D6":
+			car1_crew1_weapon_DivAmmo5.style.display = "block";
+		break;
+		
+		default:
+		break;
+	}
+
+window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.keyIdentifier=='Enter'||e.keyCode==13){if(e.target.nodeName=='INPUT'&&e.target.type=='text'){e.preventDefault();return false;}}},true);
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  padding: 7px;
+  border-collapse: collapse;
+  border-spacing: 15px;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: tan;
+  color: black;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: tan;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.DivMargin {
+	margin: auto;
+	width: 70%;
+	padding: 10px;
+	line-height: 130%
+	}
+	
+table.round {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: solid black 2px;
+  border-radius: 8px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+#headline {
+  font-size: 35px;
+  }	
+
+</style>
+
+</head>
+
+<body style="background-color:lightgrey">
+
+<div class="navbar">
+  <a href="./Index.html">Home</a>
+	<div class="subnav">
+		<button class="subnavbtn">Sponsors<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="#Rutherford">Rutherford</a>
+		  <a href="#Miyazaki">Miyazaki</a>
+		  <a href="#Mishkin">Mishkin</a>
+		  <a href="#Idris">Idris</a>
+		  <a href="#Slime">Slime</a>
+		  <a href="#TheWarden">The Warden</a>
+		  <a href="#Scarlett">Scarlett</a>
+		  <a href="#HighwayPatrol">Highway Patrol</a>
+		  <a href="#Verney">Verney</a>
+		  <a href="#Maxxine">Maxxine</a>
+		  <a href="#TheOrderoftheInferno">The Order of the Inferno</a>
+		  <a href="#BeverlyTheDevilontheHighway">Beverly, The Devil on the Highway</a>
+		  <a href="#company">Rusty's Bootleggers</a>
+		</div>
+	</div>
+	<div>
+		<a href="./Vehicles.html">Vehicles</a>
+	</div>
+	<div class="subnav">
+		<button class="subnavbtn">Weapons<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="./Weapons.html">Weapons</a>
+		  <a href="./Crewweapons.html">Crew Weapons</a>
+		  <a href="./Droppedweapons.html">Dropped Weapons</a>
+		  <a href="./Weaponspecialrules.html">Special rules</a>
+		</div>
+	</div>
+	<div>
+		<a href="./Perks.html">Perks</a>
+	</div>
+	<div>
+		<a href="./Upgrades.html">Upgrades</a>
+	</div>
+	<div>
+		<a href="./Gearphases.html">Gear Phases</a>
+	</div>
+	<div>
+		<a href="./Collisions.html">Collisions</a>
+	</div>
+	<div>
+		<a href="./Print.html">Print</a>
+	</div>
+</div>
+
+
+<p id="headline" style="text-align: center; margin-bottom: 0;">
+<b>Weapon Special Rules</b>
+</p>
+
+<div class="DivMargin">
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Ammo</h2>
+Some weapons and upgrades have limited fuel or ammunition. A weapon or upgrade with this special rule begins the game with (x) number of Ammo Tokens on its dashboard for that weapon or upgrade, where (x) is the value listed. 
+<b>Before</b> making an attack with this weapon or using this upgrade, this vehicle must discard an Ammo Token from this weapon or upgrade. If the vehicle cannot discard an Ammo Token, this weapon or upgrade may not be used. 
+Ammo Tokens are specific to a given weapon or upgrade. A vehicle may not discard Ammo Tokens from one weapon or upgrade to attack with another weapon or use another upgrade.
+</td>
+</tr>
+</table>
+
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Blast</h2>
+For every un-canceled hit caused by a weapon or effect with the Blast rule, the target immediately gains 1 Hazard Token.
+</td>
+</tr>
+</table>
+
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Blitz</h2>
+This vehicle counts as being armed with a number of copies of this weapon equal to this weapon's remaining Ammo Tokens, where each copy counts as having a single Ammo Token. 
+This means that during its Attack Step, this vehicle may attack with this weapon any number of times, as long as it doesn't attack more times that it has Ammo Tokens, and doesn't attack more times than its Crew Value.
+</td>
+</tr>
+</table>
+
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Fire</h2>
+If a vehicle suffers at least one damage from a weapon or effect with the Fire speicial rule, it cains the On-Fire rule in addition to suffering damage. 
+A vehicle cannot gain the On-Fire rule a second time. <b>On Fire:</b> At the start of this vehicle's activation, it loses 1 Hull point. This vehicle's Smash Attacks count as having the Fire special rule. 
+If this vehicle ever has zero Hazard Tokens, the fire goes out and this vehicle loses the On-Fire rule.
+</td>
+</tr>
+</table>
+
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Indirect</h2>
+When making a shooting attack with a weapon with this special rule, this vehicle may ignore terrain and Cover during the attack.
+</td>
+</tr>
+</table>
+
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Splash</h2>
+When a weapon with the Splash speical rule is used to attack, the weapon must target, and attack, every vehicle beneath the shooting template, including friendly vehicles. Each target must suffer a separate attack from this weapon. 
+<i>For example, a truck has a side-mounted Flamethrower and is driving besides two enemy cars. The player declares an attack against one of the two cars. He takes the Large Burst template and places it perpendicular with the side of his truck, and touching the side edge of his truck. 
+He is able to catch both enemy cars under the template and so rolls two separate attacks, one against each enemy, with the full 6D6 attack dice against both.</i>
+</td>
+</tr>
+</table>
+
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Zero Crew</h2>
+Some game effects can reduce a vehicle's Crew Value. When a vehicle with zero Crew is selected to activate, it first automatically changes down one Gear to a minimum of Gear 1. 
+During its movement step, only movement templates that are hazardous in the vehicle's current Gear count as permitted. This means in Gear Phases 1 and 2, the player controlling a vehicle will be forced to select movement templates that are not permitted.
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+</div>
+
+</body>
+</html>

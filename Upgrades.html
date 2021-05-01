@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  padding: 7px;
+  border-collapse: collapse;
+  border-spacing: 15px;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: tan;
+  color: black;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: tan;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.DivMargin {
+	margin: auto;
+	width: 100%;
+	line-height: 130%
+	}
+	
+.WeaponsTableDiv {
+	margin: 0cm 0cm 0cm 0.5cm;
+	}
+
+table.round {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: solid black 2px;
+  border-radius: 8px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+#headline {
+  font-size: 35px;
+  }	
+
+td.center {
+	text-align: center;
+  }  
+
+</style>
+
+</head>
+
+<body style="background-color:lightgrey">
+
+<div class="navbar">
+  <a href="./Index.html">Home</a>
+	<div class="subnav">
+		<button class="subnavbtn">Sponsors<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="#Rutherford">Rutherford</a>
+		  <a href="#Miyazaki">Miyazaki</a>
+		  <a href="#Mishkin">Mishkin</a>
+		  <a href="#Idris">Idris</a>
+		  <a href="#Slime">Slime</a>
+		  <a href="#TheWarden">The Warden</a>
+		  <a href="#Scarlett">Scarlett</a>
+		  <a href="#HighwayPatrol">Highway Patrol</a>
+		  <a href="#Verney">Verney</a>
+		  <a href="#Maxxine">Maxxine</a>
+		  <a href="#TheOrderoftheInferno">The Order of the Inferno</a>
+		  <a href="#BeverlyTheDevilontheHighway">Beverly, The Devil on the Highway</a>
+		  <a href="#company">Rusty's Bootleggers</a>
+		</div>
+	</div>
+	<div>
+		<a href="./Vehicles.html">Vehicles</a>
+	</div>
+	<div class="subnav">
+		<button class="subnavbtn">Weapons<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="./Weapons.html">Weapons</a>
+		  <a href="./Crewweapons.html">Crew Weapons</a>
+		  <a href="./Droppedweapons.html">Dropped Weapons</a>
+		  <a href="./Weaponspecialrules.html">Special rules</a>
+		</div>
+	</div>
+	<div>
+		<a href="./Perks.html">Perks</a>
+	</div>
+	<div>
+		<a href="./Upgrades.html">Upgrades</a>
+	</div>
+	<div>
+		<a href="./Gearphases.html">Gear Phases</a>
+	</div>
+	<div>
+		<a href="./Collisions.html">Collisions</a>
+	</div>
+	<div>
+		<a href="./Print.html">Print</a>
+	</div>
+</div>
+
+<p id="headline" style="text-align: center; margin-bottom: 0;">
+<b>Upgrades</b>
+</p>
+
+<div class="DivMargin">
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+		<table style="width:1300px; border: hidden;">
+			<tr>
+				<th>Upgrades</th>
+				<th>Special Rules</th> 
+				<th>Build Slot Cost</th>
+				<th>Cost</th>
+			</tr>
+			<tr>
+				<td>Armour Plating</td>
+				<td class="center">+2 hull points</td>
+				<td class="center">1</td>
+				<td class="center">4</td>
+			</tr>
+			<tr>
+				<td>Experimental Nuclear Engine</td>
+				<td class="center">Electrical</td>
+				<td class="center">-</td>
+				<td class="center">5</td>
+			</tr>
+			<tr>
+				<td>Experimental Teleporter</td>
+				<td class="center">Electrical</td>
+				<td class="center">-</td>
+				<td class="center">7</td>
+			</tr>
+			<tr>
+				<td>Exploding Ram</td>
+				<td class="center">Ammo 1</td>
+				<td class="center">-</td>
+				<td class="center">3</td>
+			</tr>
+			<tr>
+				<td>Extra Crewmember</td>
+				<td class="center">+1 Crew, up to max twice initial crew</td>
+				<td class="center">-</td>
+				<td class="center">4</td>
+			</tr>
+			<tr>
+				<td>Improvised Sludge Thrower</td>
+				<td class="center">-</td>
+				<td class="center">1</td>
+				<td class="center">2</td>
+			</tr>
+			<tr>
+				<td>Nitro Booster</td>
+				<td class="center">Ammo 1</td>
+				<td class="center">-</td>
+				<td class="center">6</td>
+			</tr>
+			<tr>
+				<td>Ram</td>
+				<td class="center">-</td>
+				<td class="center">1</td>
+				<td class="center">4</td>
+			</tr>
+			<tr>
+				<td>Roll Cage</td>
+				<td class="center">-</td>
+				<td class="center">1</td>
+				<td class="center">4</td>
+			</tr>
+			<tr>
+				<td>Tank Tracks</td>
+				<td class="center">-1 Max gear, +1 Handling</td>
+				<td class="center">1</td>
+				<td class="center">4</td>
+			</tr>
+			<tr>
+				<td>Turret mounting for Weapon</td>
+				<td class="center">Weapon gains 360-degree Arc of Fire</td>
+				<td class="center">-</td>
+				<td class="center">(x3)</td>
+			</tr>
+		</table>
+</td>
+</tr>
+</table>
+
+</div>
+
+<br>
+<br>
+
+<div class="DivMargin">
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Armour Plating</h2>
+The vehicle has been loaded with additional plates and shielding. This vehicle has its Hull Value permanently increased by 2. 
+A single vehicle may be fitted with multiple Armour Plating upgrades for further +2 hull each time.
+</td>
+</tr>
+</table>
+
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Experimental Nuclear Engine</h2>
+Mishkin-sponsored teams only. This upograde may not be purchased for lightweight vehicles. A vehicle may only purchase this upgrade once. 
+Add 2 to this vehicle's max Gear (up to a maximum of 6). This vehicle considers the Long Straight movement to be permitted in any Gear. 
+The Long Straight is not considered either Hazardous or Trivial in any Gear.
+If this vehicle ever fails a Flip check, it is immediately Wrecked and automatically Explodes. When this vehicle Explodes, it counts as Heavyweight.
+</td>
+</tr>
+</table>
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Experimental Teleporter</h2>
+Mishkin-sponsored teams only. A vehicle may only purchase this upgrade once. At the start of this vehicle's activation this vehicle may choose to activate the Experimental Teleporter prior to (and in addition to) its normal Movement Step.
+When the Experimental Teleporter is activated, this vehicle gains 3 Hazard Tokens, and then rolls a single Skid Die.
+If the Skid Dice result is any result other than a Hazard, place this vehicle anywhere within <b>Medium Range</b> range of its current position, not touching an obstruction or terrain, without altering the vehicle's facing.
+This does not cause a Collision. This vehicle then begins its normal Movement Step from this new location.
+If the Skid Dice result is a Hazard, the player to the left of the controller of the vehicle places this vehicle anywhere within <b>Long Range</b> of its current position, not touching an obstruction or terrain, without altering its facing. This does not cause a Collision.
+</td>
+</tr>
+</table>
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Exploding Ram</h2>
+When purchasing this upgrade, a facing must be declared for it, as if it was a weapon. A vehicle may only purchase this upgrade once. Lightweight vehicles may not purchase this weapon.
+The first time this vehicle is involved in a Collision on the declared facing in a game, this vehicle must declare a Smash Attack (even if the Collision is a Tailgate).
+During this Smash Attack this vehicle gains +6 attack dice. If any 1s or 2s are rolled on this vehicle's attack dice during this Smash Attack, this vehicle immediately loses one Hull Pooint for each 1 or 2 rolled.
+A vehicle may equip both a Ram and an Explosive Ram on the same facing, and their effects are cumulative.
+</td>
+</tr>
+</table>
+
+<br>
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Extra Crewmember</h2>
+Each Extra Crewmember purchased increases the vehicles Crew Value by 1. This will increase the number of attacks a vehicle can make in its Attack Step.
+A vehicle may not purchase more Extra Crewmembers than its starting Crew Value. 
+<i>For example, a pickup truck, which has a Crew Value of 3, may purchase up to 3 Extra Crewmembers, for a maximum Crew Value of 6.</i>
+</td>
+</tr>
+</table>
+
+<br>
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Improvised Sludge Thrower</h2>
+This vehicle may place the Burst templates for its dropped weapons anywhere that is at least partially within Medium Range and 360-degree Arc of Fire of this vehicle. 
+</td>
+</tr>
+</table>
+
+<br>
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Nitro Booster</h2>
+Once per activation, at the start of a Movement Step, this vehicle may declare that it is using a Nitro Booster.
+If it does, this vehicle makes an immediate forced, Long Straight move forward, and then gains Hazard Tokens until it has 5 Hazard Tokens. 
+It then resolves its Movement Step as normal, except that the vehicle may not reverse. At the end of a Movement Step in which this vehicle used Nitro Booster, it gains Hazard Tokens until it has 5 Hazard Tokens.
+</td>
+</tr>
+</table>
+
+<br>
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Ram</h2>
+The Ram can represent a ram, a bulldozer blade, a cow-catcher, a buzz saw, a wrecking ball on a chain, spiked or scythed wheels, metal spikes, or any other vicious or dangerous close combat weapon attached to the vehicle.
+When purchasing this upgrade, a facing must be declared for it, as if it was a weapon. A vehicle may only purchase a single Ram on each facing.
+When involed in a Collision on the declared facing, this vehicle may add +2 attack dice to its Smash Attack, and this vehicle does not gain any Hazard Tokens as a result of the Collision.
+</td>
+</tr>
+</table>
+
+<br>
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Roll Cage</h2>
+When this vehicle suffers a Flip, this vehicle may choose to ignore the 2 hits recieved from the Flip.
+</td>
+</tr>
+</table>
+
+<br>
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Tank Tracks</h2>
+The vehicle with Thank Tracks has had its wheels replaced with caterpillar tracks. This increases handling by 1, but reduces its max Gear by 1.
+This vehicle may also ignore rough and treacherous surfaces. A vehicle may only purchase this upgrade once. Tanks, Helicopters, and Gyrocopters may not purchase Tank Tracks.
+</td>
+</tr>
+</table>
+
+<br>
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Turret Mounting for weapon</h2>
+When purchasing a shooting weapon for a vehicle, players may pay three times the basic cost of the weapon to make it Turret-mounted.
+A Turret-mounted weapon has a 360-degree Arc of Fire.
+<i>For example, aa front-mounted Minigun will cost you 5 Cans, but a Turret-mounted Minigun will cost you 15 Cans.</i>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<br>
+</body>
+</html>

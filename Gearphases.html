@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head> 
+<title>Gaslands</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  padding: 7px;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: tan;
+  color: black;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: tan;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+
+	
+#car1_upgrade5_label {
+	display: none;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}
+	
+#car1_upgrade5_select {
+	display: none;
+	padding: 7px;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}
+	
+#car1_upgrade6_label {
+	display: none;
+	padding: 7px;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}	
+	
+	
+#car1_upgrade6_select {
+	display: none;
+	padding: 7px;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}	
+	
+#car1_upgrade7_label {
+	display: none;
+	padding: 7px;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}	
+	
+	
+#car1_upgrade7_select {
+	display: none;
+	padding: 7px;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}	
+	
+	
+.DivMargin {
+	margin: auto;
+	width: 100%;
+	}
+	
+.WeaponsTableDiv {
+	margin: auto;
+	border-collapse: collapse;
+	line-height: 130%
+	
+	}	
+	
+	
+#DivShowCar1 {
+
+   }
+	
+#DivShowCar2 {
+   display: none;
+   }
+
+#DivShowCar3 {
+   display: none;
+   }
+   
+#DivShowCar4 {
+   display: none;
+   }
+
+#CarNameTable {
+  border: none;
+  border-collapse: collapse;
+   }	
+	
+#testDIV {
+  display: none;
+  } 
+
+
+table.round {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: solid black 2px;
+  border-radius: 8px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+table.round1 {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: solid black 2px;
+  border-radius: 8px;
+ }
+  
+table.round2 {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: solid black 2px;
+  border-radius: 8px;
+ }  
+
+td.center {
+	text-align: center;
+  }
+  
+.stats {
+	width: 240px;
+	border: none;
+}
+
+
+.stats2 {
+	border: none;
+	text-align: left;
+	
+}
+
+.stats3 {
+	border: none;
+	text-align: right;
+	
+}
+
+#car1_button_reset {
+	background-color: lightgrey;
+	color: black;
+	border: none;
+	padding: 15px 52px;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+}
+
+#car2_button_reset {
+	background-color: lightgrey;
+	color: black;
+	border: none;
+  	padding: 15px 52px;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+}
+
+#car3_button_reset {
+	background-color: lightgrey;
+	color: black;
+	border: none;
+  	padding: 15px 52px;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+}
+
+#car4_button_reset {
+	background-color: lightgrey;
+	color: black;
+	border: none;
+  	padding: 15px 52px;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+}
+
+#headline {
+	font-size: 35px;
+}
+
+
+</style>
+
+</head>
+
+<body style="background-color:lightgrey;">
+
+<div class="navbar">
+  <a href="./Index.html">Home</a>
+	<div class="subnav">
+		<button class="subnavbtn">Sponsors<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="#Rutherford">Rutherford</a>
+		  <a href="#Miyazaki">Miyazaki</a>
+		  <a href="#Mishkin">Mishkin</a>
+		  <a href="#Idris">Idris</a>
+		  <a href="#Slime">Slime</a>
+		  <a href="#TheWarden">The Warden</a>
+		  <a href="#Scarlett">Scarlett</a>
+		  <a href="#HighwayPatrol">Highway Patrol</a>
+		  <a href="#Verney">Verney</a>
+		  <a href="#Maxxine">Maxxine</a>
+		  <a href="#TheOrderoftheInferno">The Order of the Inferno</a>
+		  <a href="#BeverlyTheDevilontheHighway">Beverly, The Devil on the Highway</a>
+		  <a href="#company">Rusty's Bootleggers</a>
+		</div>
+	</div>
+	<div>
+		<a href="./Vehicles.html">Vehicles</a>
+	</div>
+	<div class="subnav">
+		<button class="subnavbtn">Weapons<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="./Weapons.html">Weapons</a>
+		  <a href="./Crewweapons.html">Crew Weapons</a>
+		  <a href="./Droppedweapons.html">Dropped Weapons</a>
+		  <a href="./Weaponspecialrules.html">Special rules</a>
+		</div>
+	</div>
+	<div>
+		<a href="./Perks.html">Perks</a>
+	</div>
+	<div>
+		<a href="./Upgrades.html">Upgrades</a>
+	</div>
+	<div>
+		<a href="./Gearphases.html">Gear Phases</a>
+	</div>
+	<div>
+		<a href="./Collisions.html">Collisions</a>
+	</div>
+	<div>
+		<a href="./Print.html">Print</a>
+	</div>
+</div>
+ 
+
+
+<p id="headline" style="text-align: center; margin-bottom: 0;">
+<b>Gear Phase</b>
+</p>
+
+<br>
+
+<div class="WeaponsTableDiv">
+
+<table class="center" style="border: none;">
+<tr style="border: none;">
+<td style="border: none;">
+
+<div class="WeaponsTableDiv">
+<table class="round" style="background-color: white; width: 750px;">
+	<tr style="border: none">
+		<td style="border: none">
+				<p style="text-align: center; margin-bottom: 0; font-size: 20px;">
+				<b>Movement Step</b>
+				</p>
+			<br>1.1.	<b>Select</b> a movement template.
+			<br>
+			<br>1.2.	<b>Place</b> the movement template.
+			<br>
+			<br>1.3.	<b>Roll Skid Dice</b>, up to the Handling value of each vehicle.
+			<br>
+			<br>1.4.	<b>Spend Shift results</b>, up to the Handling value of each vehicle.
+			<br>&nbsp;&nbsp;&nbsp;&nbsp; &bull; Discard one Hazard, Slide or Spin result.
+			<br>&nbsp;&nbsp;&nbsp;&nbsp; &bull; Change Gear up or down by 1, gaining 1 Hazard Token.
+			<br>&nbsp;&nbsp;&nbsp;&nbsp; &bull; Discard one Hazard Token from this vehicle.
+			<br>&nbsp;&nbsp;&nbsp;&nbsp; &bull; Discard without effect.
+			<br>
+			<br>1.5.	<b>Gain Hazard Tokens</b> from uncancelled Hazard, Slide and Spin results.
+			<br>
+			<br>1.6.	<b>Place Slide template</b> if the vehicle had an uncancelled Slide result.
+			<br>
+			<br>1.7.	<b>Move</b> the vehicle into its <b>Final Position.</b>
+			<br>
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; COLLISION WINDOW
+			<br>
+			<br>1.8.	<b>Spin</b> the vehicle if the vehicle had an uncancelled Spin result.
+			<br>
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; COLLISION WINDOW
+			<br>
+		</td>
+	</tr>
+</table>
+
+</div>
+
+</td>
+<td style="vertical-align: top; border: none;">
+
+<div class="WeaponsTableDiv">
+<table class="round" style="background-color: white; width: 750px;">
+	<tr style="border: none">
+		<td style="border: none;">
+				<p style="text-align: center; margin-bottom: 0; font-size: 20px;">
+				<b>Getting Wrecked</b>
+				</p>
+			<br>1.	<b>Skid to a Halt:</b> Forced move short straight forward.
+			<br>
+			<br>&nbsp;&nbsp;&nbsp; COLLISION WINDOW
+			<br>
+			<br>2.	<b>Reset:</b> Reduce current Gear to 1 and discard all Hazard Tokens from the vehicle.
+			<br>
+			<br>3.	<b>Explosion Check:</b> Roll D6 + ammo tokens, explodes on 6+
+			<br>
+			<br>4.	<b>Get Wrecked:</b> Turn model over, leave in play as a wreck.
+			<br>
+			
+		</td>
+	</tr>
+</table>
+
+</div>
+
+</td>
+</tr>
+<tr style="border: none;">
+<td style="border: none;">
+
+<div class="WeaponsTableDiv">
+<table class="round" style="background-color: white; width: 750px;">
+	<tr style="border: none">
+		<td style="border: none">
+				<p style="text-align: center; margin-bottom: 0; font-size: 20px;">
+				<b>Attack Step</b>
+				</p>
+			<br>2.1.	<b>Declare targets</b> and check range and cover.
+			<br>
+			<br>2.2.	<b>Roll Attack Dice:</b> 4+ to hit, 6 is critical (2 hits).
+			<br>
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; COLLISION WINDOW
+			<br>
+			<br>2.3.	<b>Evade:</b> Each 6+ cancels one hit.
+			<br>
+			<br>2.4.	<b>Damage:</b> Remove Hull Points.
+			<br>
+			
+		</td>
+	</tr>
+</table>
+
+</div>
+
+</td>
+</tr>
+<tr style="border: none;">
+<td style="border: none;">
+
+<div class="WeaponsTableDiv">
+<table class="round" style="background-color: white; width: 750px;">
+	<tr style="border: none">
+		<td style="border: none;">
+				<p style="text-align: center; margin-bottom: 0; font-size: 20px;">
+				<b>Wipeout</b>
+				</p>
+			<br>3.1.	<b>Flip check:</b> Roll D6, if lower than current Gear then suffer 2 hits and forced move medium straight.
+			<br>
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; COLLISION WINDOW
+			<br>
+			<br>3.2.	<b>Reset:</b> Regardless of flip check, reduce current Gear to 1 and discard all Hazard Tokens from the vehicle.
+			<br>
+			<br>3.3.	<b>Lose Control:</b> Regardless of flip check, the player clockwise of the player controlling the active vehicle pivots the vehicle about its centre point to any facing.
+			<br>
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; COLLISION WINDOW
+			<br>
+			
+		</td>
+	</tr>
+</table>
+
+</div>
+
+
+</td>
+</tr>
+</table>
+
+
+
+</div>
+
+<br>
+
+
+
+<script>
+
+
+
+window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.keyIdentifier=='Enter'||e.keyCode==13){if(e.target.nodeName=='INPUT'&&e.target.type=='text'){e.preventDefault();return false;}}},true);
+
+</script>
+
+
+</body>
+</html>

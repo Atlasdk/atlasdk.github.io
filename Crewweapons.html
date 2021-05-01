@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  padding: 7px;
+  border-collapse: collapse;
+  border-spacing: 15px;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: tan;
+  color: black;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: tan;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.DivMargin {
+	margin: auto;
+	width: 70%;
+	padding: 10px;
+	line-height: 130%
+	}
+	
+.WeaponsTableDiv {
+	margin: 0cm 0cm 0cm 0.5cm;
+	}
+
+table.round {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: solid black 2px;
+  border-radius: 8px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+#headline {
+  font-size: 35px;
+  }
+
+td.center {
+	text-align: center;
+  }  
+
+</style>
+
+</head>
+
+<body style="background-color:lightgrey">
+
+<div class="navbar">
+  <a href="./Index.html">Home</a>
+	<div class="subnav">
+		<button class="subnavbtn">Sponsors<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="#Rutherford">Rutherford</a>
+		  <a href="#Miyazaki">Miyazaki</a>
+		  <a href="#Mishkin">Mishkin</a>
+		  <a href="#Idris">Idris</a>
+		  <a href="#Slime">Slime</a>
+		  <a href="#TheWarden">The Warden</a>
+		  <a href="#Scarlett">Scarlett</a>
+		  <a href="#HighwayPatrol">Highway Patrol</a>
+		  <a href="#Verney">Verney</a>
+		  <a href="#Maxxine">Maxxine</a>
+		  <a href="#TheOrderoftheInferno">The Order of the Inferno</a>
+		  <a href="#BeverlyTheDevilontheHighway">Beverly, The Devil on the Highway</a>
+		  <a href="#company">Rusty's Bootleggers</a>
+		</div>
+	</div>
+	<div>
+		<a href="./Vehicles.html">Vehicles</a>
+	</div>
+	<div class="subnav">
+		<button class="subnavbtn">Weapons<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="./Weapons.html">Weapons</a>
+		  <a href="./Crewweapons.html">Crew Weapons</a>
+		  <a href="./Droppedweapons.html">Dropped Weapons</a>
+		  <a href="./Weaponspecialrules.html">Special rules</a>
+		</div>
+	</div>
+	<div>
+		<a href="./Perks.html">Perks</a>
+	</div>
+	<div>
+		<a href="./Upgrades.html">Upgrades</a>
+	</div>
+	<div>
+		<a href="./Gearphases.html">Gear Phases</a>
+	</div>
+	<div>
+		<a href="./Collisions.html">Collisions</a>
+	</div>
+	<div>
+		<a href="./Print.html">Print</a>
+	</div>
+</div>
+
+
+<p id="headline" style="text-align: center; margin-bottom: 0;">
+<b>Crew Weapons</b>
+</p>
+
+<div class="DivMargin">
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+		<table style="width:1300px; border: hidden;">
+			<tr>
+				<th>Weapon Name</th>
+				<th>Range</th> 
+				<th>Attack Dice</th>
+				<th>Special Rules</th>
+				<th>Build Slot Cost</th>
+				<th>Cost</th>
+			</tr>
+			<tr>
+				<td>Handgun</td>
+				<td class="center">Medium</td>
+				<td class="center">1D6</td>
+				<td class="center">Crew Fired</td>
+				<td class="center">-</td>
+				<td class="center">-</td>
+				</tr>
+			<tr>
+				<td>Blunderbuss</td>
+				<td class="center">Small Burst</td>
+				<td class="center">2D6</td>
+				<td class="center">Crew Fired, Splash</td>
+				<td class="center">-</td>
+				<td class="center">2</td>
+			</tr>
+			<tr>
+				<td>Gas Grenades</td>
+				<td class="center">Medium</td>
+				<td class="center">1D6</td>
+				<td class="center">Crew Fired, Blitz, Indirect, Ammo 5</td>
+				<td class="center">-</td>
+				<td class="center">1</td>
+			</tr>
+			<tr>
+				<td>Grenades</td>
+				<td class="center">Medium</td>
+				<td class="center">1D6</td>
+				<td class="center">Crew Fired, Blitz, Indirect, Blast, Ammo 5</td>
+				<td class="center">-</td>
+				<td class="center">1</td>
+			</tr>
+			<tr>
+				<td>Magnum</td>
+				<td class="center">Double</td>
+				<td class="center">1D6</td>
+				<td class="center">Crew Fired, Blast</td>
+				<td class="center">-</td>
+				<td class="center">3</td>
+			</tr>
+			<tr>
+				<td>Molotov Cocktails</td>
+				<td class="center">Medium</td>
+				<td class="center">1D6</td>
+				<td class="center">Crew Fired, Blitz, Indirect, Fire, Ammo 5</td>
+				<td class="center">-</td>
+				<td class="center">1</td>
+			</tr>
+			<tr>
+				<td>Shotgun</td>
+				<td class="center">Long</td>
+				<td class="center">*</td>
+				<td class="center">Crew Fired</td>
+				<td class="center">-</td>
+				<td class="center">4</td>
+			</tr>
+			<tr>
+				<td>Steel Nets</td>
+				<td class="center">Short</td>
+				<td class="center">3D6</td>
+				<td class="center">Crew Fired, Blast</td>
+				<td class="center">-</td>
+				<td class="center">2</td>
+			</tr>
+			<tr>
+				<td>Submachine Gun</td>
+				<td class="center">Medium</td>
+				<td class="center">3D6</td>
+				<td class="center">Crew Fired</td>
+				<td class="center">-</td>
+				<td class="center">5</td>
+			</tr>
+		</table>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<br>
+
+<div class="DivMargin">
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Crew Fired</h2>
+A weapon that is Crew Fired benefits from a 360-degree Arc of Fire and does not need to declare a facing when purchased.
+</td>
+</tr>
+</table>
+
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Gas Grenades</h2>
+If this weapon scores one or more un-cancelled hits on the target, instead of causing damage, reduce the target's Crew Value by 1 for each un-cancelled hit, to a minimum of 0, until the end of the Gear Phase.
+</td>
+</tr>
+</table>
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Steel Nets</h2>
+This weapon's hits do not cause damage. Hits will add Hazard Tokens as a result of the Blast special rule as normal.
+</td>
+</tr>
+</table>
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Shotgun</h2>
+When attacking with this weapon, roll 3D6 attack dice if the target is within Short Range, 2D6 attack dice if the target is within Medium Range, and 1D6 attack dice if the target is within Long Range.
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<br>
+
+</body>
+</html>

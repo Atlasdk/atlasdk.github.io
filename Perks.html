@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  padding: 7px;
+  border-collapse: collapse;
+  border-spacing: 15px;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: tan;
+  color: black;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: tan;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.DivMargin {
+	margin: auto;
+	width: 80%;
+	padding: 10px;
+	line-height: 130%
+	}
+	
+table.round {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: solid black 2px;
+  border-radius: 8px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+#headline {
+  font-size: 35px;
+  }	
+
+</style>
+
+</head>
+
+<body style="background-color:lightgrey">
+
+<div class="navbar">
+  <a href="./Index.html">Home</a>
+	<div class="subnav">
+		<button class="subnavbtn">Sponsors<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="#Rutherford">Rutherford</a>
+		  <a href="#Miyazaki">Miyazaki</a>
+		  <a href="#Mishkin">Mishkin</a>
+		  <a href="#Idris">Idris</a>
+		  <a href="#Slime">Slime</a>
+		  <a href="#TheWarden">The Warden</a>
+		  <a href="#Scarlett">Scarlett</a>
+		  <a href="#HighwayPatrol">Highway Patrol</a>
+		  <a href="#Verney">Verney</a>
+		  <a href="#Maxxine">Maxxine</a>
+		  <a href="#TheOrderoftheInferno">The Order of the Inferno</a>
+		  <a href="#BeverlyTheDevilontheHighway">Beverly, The Devil on the Highway</a>
+		  <a href="#company">Rusty's Bootleggers</a>
+		</div>
+	</div>
+	<div>
+		<a href="./Vehicles.html">Vehicles</a>
+	</div>
+	<div class="subnav">
+		<button class="subnavbtn">Weapons<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="./Weapons.html">Weapons</a>
+		  <a href="./Crewweapons.html">Crew Weapons</a>
+		  <a href="./Droppedweapons.html">Dropped Weapons</a>
+		  <a href="./Weaponspecialrules.html">Special rules</a>
+		</div>
+	</div>
+	<div>
+		<a href="./Perks.html">Perks</a>
+	</div>
+	<div>
+		<a href="./Upgrades.html">Upgrades</a>
+	</div>
+	<div>
+		<a href="./Gearphases.html">Gear Phases</a>
+	</div>
+	<div>
+		<a href="./Collisions.html">Collisions</a>
+	</div>
+	<div>
+		<a href="./Print.html">Print</a>
+	</div>
+</div>
+
+
+<p id="headline" style="text-align: center; margin-bottom: 0;">
+<b>Perks</b>
+</p>
+
+
+<div class="DivMargin">
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+<table style="border-collapse: collapse; border: none; width:1500px;">
+ <tr style="border: none;">
+ <td style="border: none; ; line-height: 130%">
+Perks represent the skills and experience of the members of your team and allow you to further personalise your team.
+The are divided into a set of perk classes. Vehicles may only purchase perks from those perks classes lists under their chosen sponsor.
+There is no limit to the number of perks each vehicle can have. Each perk may only be purchased once for each vehicle.
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+
+
+<div class="DivMargin">
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+
+<div class="WeaponsTableDiv">
+		<table style="width:1500px; border: hidden;">
+			<tr>
+				<th><h2>Aggression</h2></th>
+				<th><h2>Badass</h2></th> 
+				<th><h2>Built</h2></th>
+			</tr>
+			<tr>
+				<td style="width:500px; vertical-align: top; line-height: 130%;">
+					<br><b>Double-Barreled (2 Cans)</b>
+					<br>During this vehicle's Attack Step, up to three weapons with the Crew Fired spcial rule may gain a +1 bonus to hit.
+					<br>
+					<br><b>Boarding Party (2 Cans)</b>
+					<br>This vehicle ignores the Distracted rule, meaning this vehicle may attack during the Attack Step even if the vehicle is touching an obstacle.
+					<br>
+					<br><b>Battlehammer (4 Cans)</b>
+					<br>When making a Smash Attack this vehicle gains +1 attack die for each Hazard Token it currently has.
+					<br>
+					<br><b>Terrifying Lunatic (5 Cans)</b>
+					<br>Whenever a vehcle controlled by another player ends its Movement Step within Short Range of this vehicle, the active vehicle gains a Hazard Token.
+					<br>
+					<br><b>Grinderman (5 Cans)</b>
+					<br>Before this vehicle rolls its attack dice in a Smash Attack, it may choose to add 1 Hazard Token to the target vehicle for each point of damage it inflicts, instead of removing Hull Points.
+					<br>
+					<br><b>Murder Tractor (5 Cans)</b>
+					<br>This vehicle may make piledriver attacks, like a War Rig.
+				</td>
+				<td style="width:500px; vertical-align: top; line-height: 130%">
+					<br><b>Powder Keg (1 Can)</b>
+					<br>This vehicle may add 1 to its explosion check. Treat this vehicle as one weightclass heavier when it explodes.
+					This bonus <b>does</b> apply during resolution of the Fireworks perk.
+					<br>
+					<br><b>Crowd Pleaser (1 Can)</b>
+					<br>If this vehicle wipes out, gain 1 Audience Vote.
+					<br>
+					<br><b>Road Warrior (2 Cans)</b>
+					<br>Once per activation, if this vehicle has successfully caused one or more hits on an enemy vehicle at any point during this activation, this vehicle may remove a single Hazard Token at the end of its Attack Step.
+					<br>
+					<br><b>Cover Me (2 Cans)</b>
+					<br>Once during its activation, this vehicle may remove a Hazard Token and place it on another friendly vehicle within Double Range.
+					<br>
+					<br><b>Madman (3 Cans)</b>
+					<br>At the end of this vehicle's Movement Step, if it has 4 or more Hazard Tokens, it may remove a Hazard Token and place it on another vehicle within Medium Range.
+					<br>
+					<br><b>Bullet-Time (3 Cans)</b>
+					<br>If this vehicle resolves a Slide result during its Movement Step, this may select one of its weapons to count as Turret-mounted for the rest of the activation.
+				</td>
+				<td style="width:500px; vertical-align: top; line-height: 130%">
+					<br><b>Dead Weight (2 Cans)</b>
+					<br>During this vehicle's Attack Step, this vehicle may gain 2 Hazard Tokens to count as one weightclass heavier (unless already Heavyweight) 
+					until the start of its next activation.
+					<br>
+					<br><b>Barrel Roll (2 Cans)</b>
+					<br>When this vehicle suffers a Flip, it may choose to place the Flip template touching the centre of either side edge or the rear edge of this vehicle, and perpendicular to that edge, instead of touching the front edge as normal.
+					<br>
+					<br><b>Bruiser (4 Cans)</b>
+					<br>In a Collision involving this vehicle, if this vehicle declares a reaction other than Evade against an enemy vehicle, the enemy vehicle immediately gains one Hazard Token.
+					<br>
+					<br><b>Splashback (5 Cans)</b>
+					<br>Once per step, when this vehicle loses one or more Hull Points, make a 1D6 attack against each vehicle within Medium Range at the end of that step.
+					<br>
+					<br><b>Crusher (7 Cans)</b>
+					<br>This vehicle gains the Up and Over special rule.
+					<br><b>Up and Over: </b>During this vehicle's Movement Step, after resolving a Collision with an obstruction of a lower weight class, this vehicle may declare that it is going "Up and Over".
+					If it does, it may ignore the obstruction for the remainder of its Movement Step, as it drives right over the top of it.
+					This vehicle cannot use this ability to ignore another vehicle with the Up and Over special rule.
+					<br>
+					<br><b>Feel No Pain (8 Cans)</b>
+					<br>During an enemy vehicle's Attack Step, after an attacker has rolled all their attack dice against this vehicle, if the attacks caused a total of 2 or fewer uncancelled hits, cancel all remaining hits.
+				</td>
+				
+			</tr>
+		</table>
+</div>
+
+</td>
+</tr>
+</table>
+
+<br>
+<br>
+
+
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+
+<div class="WeaponsTableDiv">
+		<table style="width:1500px; border: hidden;">
+			<tr style="border: none">
+					<th><h2>Daring</h2></th>
+					<th><h2>Horror</h2></th>
+					<th><h2>Military</h2></th>
+			</tr>
+			<tr>
+				<td style="width:500px; vertical-align: top; line-height: 130%">
+					<br><b>Chrome-Whisperer (2 Cans)</b>
+					<br>This vehicle may Push It any number of times during a single Movement Step, gaining 1 Hazard Token each time.
+					<br>
+					<br><b>Slippery (3 Cans)</b>
+					<br>Vehicles making a Smash Attack targeting this vehicle suffers a penalty of -2 attack dice.
+					<br>
+					<br><b>Handbrake Artist (3 Cans)</b>
+					<br>When applying a Spin result, this vehcle may choose to face <b>any</b> direction.
+					<br>
+					<br><b>Evasive (5 Cans)</b>
+					<br>Before making an Evade roll, this vehicle may gain any number of Hazard Tokens to add +1 to each of their Evade dice for each Hazard Token gained. 
+					A roll of a "1" on an Evade dice always counts as a failure.
+					<br>
+					<br><b>Powerslide (5 Cans)</b>
+					<br>This vehicle may use any template except for the Long Straight template instead of the Slide templte when applying a Slide result.
+					As with the step 1.1 of Movement Step, you must use the first movement template you touch. Treat the selected movement template as a Slide template for the purposes of finding the vehicle's Final Position.
+					<br>
+					<br><b>Stunt Driver (7 Cans)</b>
+					<br>This perk may only be taken on a lightweight or middleweight vehicle types with a base Handling Value of 3 or more. This vehicle may choose to ignore any number of obstructions during its Movement Step.
+					After any Movement Step in which this vehicle chose to ignore any obstruction using this ability, this vehicle immediately gains 3 Hazard Tokens.
+				</td>
+				<td style="width:500px; vertical-align: top; line-height: 130%">
+					<br><b>Purifying Flames (1 Can)</b>
+					<br>Once per activation, at the start of this vehicle's activation, this vehicle may suffer up to three damage to select any friendly vehicle.
+					For each point of damage suffered via this effect, repair that number of Hull Points on the target vehicle. 
+					This damage may not be reduced. This damage counts as having the Fire ruleThis Effect may not be used to raise a vehicle above its starting Hull Value.
+					<br>
+					<br><b>Ecstatic Visions (1 Can)</b>
+					<br>Once per activation, at the start of this vehicle's activation, this vehicle may gain up to 3 Hazard Tokens to discard 1 Hazard Token from a friendly vehicle for each Hazard Token gained.
+					<br>
+					<br><b>Sympathy for The Devil (1 Can)</b>
+					<br>When this vehicle makes and Evade check, its controller may select a friendly vehicle within Medium Range. Add the current Gear of the selected vehicle to this vehicle's current Gear for the purposes of this evade check.
+					Both the selected vehicle and this vehicle suffer any usvaned damage from this attack, including any additional effects.
+					<br>
+					<br><b>Highway to Hell (2 Cans)</b>
+					<br>At the end of its Movement Step, if this vehicle selected a straight template, this vehicle may suffer two damage. This damage counts as having the Fire rule. If any Hull Points are removed by this effect, this vehicle may leave its movement template (ignoring any slide template) in play as a Napalm dropped weapon template.
+					Remove this template at the start of this vehicle's next activation.
+					<br>
+					<br><b>Violent Manifestation (3 Cans)</b>
+					<br>When this vehicle is respawned: make an immediate attack (with attack dice based on the weight of the respawned vehicle) against every other vehicle within Medium Range as if this vehicle was an exploding wreck.
+					This explosion counts as having both the "Blast" and "Fire" rules.
+					<br>
+					<br><b>Angel of Death (4 Cans)</b>
+					<br>Before making an attack, this vehicle may suffer up to three damage to add that many attack dice to a single weapon used in this attack.
+				</td>
+				<td style="width:500px; vertical-align: top; line-height: 130%">
+					<br><b>Dead-Eye (2 Cans)</b>
+					<br>During this vehicle's Attack Step, this vehicle gains +1 bonus to hit if making a shooting attack at a target within Double Range and not within Medium Range.
+					Critical Hits still occur only on the natural roll of 6.
+					<br>
+					<br><b>Loader (2 Cans)</b>
+					<br>At the start of its Attack Step, this vehicle may temporarily reduce its Crew Value by one, once, until the end of the Attack Step, to gain +1 bonus to hit with a single weapon.
+					Critical Hits still occur only on the natural roll of 6.
+					<br>
+					<br><b>Fully Loaded (2 Cans)</b>
+					<br>If a shooting weapon on this vehicle has 3 or more Ammo Tokens remaining before discarding an Ammo Token to attack, that weapon gains +1 attack dice.
+					<br>
+					<br><b>Rapid Fire (2 Cans)</b>
+					<br>Once per round, after attacking with a weapon, this vehicle may resolve an additional Attack Step in which it may only attack with that weapon.
+					<br>
+					<br><b>Headshot (4 Cans)</b>
+					<br>When making a shooting attack, this vehicle's Critical Hits inflict 3 hits instead of the normal two hits.
+					<br>
+					<br><b>Return Fire (5 Cans)</b>
+					<br>Once per Gear Phase, if this vehicle is the target of a shooting attack, this vehicle may take 2 Hazard Tokens to immediately attack, as if it was this vehicleøs Attack Step.		
+				</td>
+				
+			</tr>
+		</table>
+</div>
+
+</td>
+</tr>
+</table>
+
+<br>
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+
+<div class="WeaponsTableDiv">
+		<table style="width:1500px; border: hidden;">
+			<tr>
+				<th><h2>Precision</h2></th>
+				<th><h2>Pursuit</h2></th>
+				<th><h2>Reckless</h2></th>
+			</tr>
+			<tr>
+				<td style="width:500px; vertical-align: top; line-height: 130%">
+					<br><b>Mister Fahrenheit (2 Cans)</b>
+					<br>This vehicle cannot gain more than 2 Hazard Tokens from Collisions during a single activation.
+					<br>
+					<br><b>Moment of Glory (2 Cans)</b>
+					<br>Once per game, after rolling the Skid Dice, but before resolving the results, this vehicle may immediately change any number of Skid Dice to any results they choose.
+					<br>
+					<br><b>Restraint (2 Cans)</b>
+					<br>When this vehicle would gain a Hazard Token for shifting <b>down</b> a Gear, this vehicle may remove one Hazard instead. 
+					<br>
+					<br><b>Expertise (3 Cans)</b>
+					<br>This vehicle adds 1 to its Handling Value.
+					<br>
+					<br><b>Trick Driving (3 Cans)</b>
+					<br>This vehicle may select a movement template as if its current Gear was one higher or one lower.
+					<br>
+					<br><b>Easy Rider (5 Cans)</b>
+					<br>Once per round, this vehicle may discard one rolled Skid Dice result before applying the results.
+				</td>
+				<td style="width:500px; vertical-align: top; line-height: 130%">
+					<br><b>On Your Tail (2 Cans)</b>
+					<br>When an enemy vehicle resolves a Spin or Slide move that ends within Short Range of this vehicle, that enemy vehicle gains 1 Hazard Token.
+					<br>
+					<br><b>Schadenfreude (2 Cans)</b>
+					<br>If another vehicle wipes out within Short Range of this vehicle, (either before or after any Flip) remove all Hazard Tokens from this vehicle.
+					<br>
+					<br><b>Taunt (2 Cans)</b>
+					<br>At the start of this vehicle's Attack Step, roll a Skid Die. If you roll something other than a Shift result, you may place that Skid Dice result onto the dashboard of a target vehicle within Short Range.
+					This Skid Dice result must be resolved during that vehicle's next Movement Step, and may not be re-rolled.
+					<br>
+					<br><b>Out Run (2 Cans)</b>
+					<br>At the start of this vehicle's Attack Step, all vehicles within Short Range of this vehicle and in a lower current Gear than this vehicle gains 1 Hazard Token.
+					<br>
+					<br><b>Pit (4 Cans)</b>
+					<br>During this vehicle's activation, if this vehicle is involved in a non-head-on Collision with an enemy vehicle, it may declare a "Pursuit Intervention Technique" (PIT) as its reaction, targeting the enemy vehicle, instead of declaring a Smash Attack or Evade.
+					If this vehicle declares a PIT, it may select any movement template the target vehicle considers Hazardous in its current Gear.
+					Immeediately after the resolution of this Collision, the target vehicle must make a forced move directly forward using the selected movement template.
+					<br>
+					<br><b>Unnerving Eye Contact (5 Cans)</b>
+					<br>Enemy vehicles within Short Range of this vehicle may not use Shift results to remove Hazard Tokens from their dashboard-
+				</td>
+				<td style="width:500px; vertical-align: top; line-height: 130%">
+					<br><b>Drive Angry (1 Can)</b>
+					<br>At the start of this vehicle's activation, this vehicle gains 1 Hazard Token.
+					<br>
+					<br><b>Hog Wild (2 Cans)</b>
+					<br>During a Collision resolved during a Wipeout Step, this vehicle gains +2 Smash Attack dice.
+					<br>
+					<br><b>In for a Penny (2 Cans)</b>
+					<br>If this vehicle has gained six or more Hazard Tokens during this activation, it may double the attack dice of any Smash Attack it makes for the remainder of this activation.
+					<br>
+					<br><b>Don't Come Knocking (4 Cans)</b>
+					<br>At the start of this vehicle's activation, it may gain 4 Hazard Tokens. If it does, this vehicle cannot gain or lose any Hazard Tokens by any means until the start of its next activation.
+					<br>
+					<br><b>Bigger'N You (4 Cans)</b>
+					<br>If this vehicle is involved in a Collision, double any Smash Attack bonusses or penalties resulting from weight differences during that Collision.
+					<br>
+					<br><b>Beerserker (5 Cans)</b>
+					<br>When this vehicle would suffer damage outside of its activation, reduce that damage by 1, to a minimum of 1.
+					<br>
+				</td>
+				
+			</tr>
+		</table>
+</div>
+
+</td>
+</tr>
+</table>
+
+<br>
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+
+<div class="WeaponsTableDiv">
+		<table style="width:1500px; border: hidden;">
+			<tr>
+				<th><h2>Speed</h2></th>
+				<th><h2>Technology</h2></th>
+				<th><h2>Tuning</h2></th>
+			</tr>
+			<tr>
+				<td style="width:500px; vertical-align: top; line-height: 130%">
+					<br><b>Hot Start (1 Can)</b>
+					<br>Roll a D6 at the start of the game. This vehicle starts the game in that Gear. Re-roll if this would put the current Gear of the vehicle above its max Gear.
+					<br>
+					<br><b>Slipstream (2 Cans)</b>
+					<br>If this vehicle is involved in a Tailgate Collision during its activation, this vehicle may declare a Slipstream reaction.
+					If they do, the other vehicle may not declare a reaction. If this vehicle declares a Slipstream reaction, this vehicle may change up or down one Gear and gain a Hazard Token.
+					Neither vehicle gains Hazard Tokens as a result of this Collision.
+					<br>
+					<br><b>Overload (2 Cans)</b>
+					<br>When resolving Skid Dice during the Movement Step, this vehicle may roll one additional Skid Dice. If it does, it must change up at least One Gear or gain a Hazard Token.
+					<br>
+					<br><b>Downshift (3 Cans)</b>
+					<br>At the end of a Movement Step in which this vehicle changed down one or more Gears, this vehcle may make a forced move Short Straight forward.
+					<br>
+					<br><b>Time Extended! (3 Cans)</b>
+					<br>At the end of a Movement Step in which this vehicle passes a race gate, this vehicle may remove any number of Hazard Tokens.
+					<br>
+					<br><b>Hell for Leather (5 Cans)</b>
+					<br>This vehicle considers Long Straight to be permitted in any Gear. The Long Straight is not considered either Hazardous or Trivial in any Gear.
+					<br>
+				</td>
+				<td style="width:500px; vertical-align: top; line-height: 130%">
+					<br><b>Rocket Thrusters (1 Can)</b>
+					<br>When this vehicle is moved as part of a Flip, it may choose to use the Long Straight, Veer, or Gentle templates instead of the Medium Straight template.
+					<br>
+					<br><b>Whizbang (1 Can)</b>
+					<br>At the start of each game, this vehicle gains a random speed perk. This perk is lost at the end of the game.
+					<br>
+					<br><b>Gyroscope (1 Can)</b>
+					<br>At the start of each game, this vehicle gains a random Daring perk. This perk is lost at the end of the game.
+					<br>
+					<br><b>Satellite Navigation (2 Casn)</b>
+					<br>When this vehicle resolves its Skid Dice, this vehicle's controller may set aside one Shift result. This vehicle may have any number of Shift results set aside.
+					Any vehicle in this team may use these set aside Shift results during a later Movement Step, as if they had rolled them in that Movement Step.
+					<br>
+					<br><b>Mobile Mechanic (3 Cans)</b>
+					<br>Once per activation, at the start of its Attack Step, this vehicle may temporarily reduce its Crew Value by one, once, until the end of the Attack Step, to perform a field repair.
+					If it does, this vehicle gains 1 Hull Point, which may not takes its Hull Points above the vehicle's Hull Value.
+					<br>
+					<br><b>Eureka! (4 Cans)</b>
+					<br>Once per game, at the start of its Attack Step, this vehicle's controller may declare any weapon that this vehicle has not attacked with yet this game.
+					This vehicle counts as being armed with the declared weapon, on a facing of their choice, for the next attack only.
+					<br>
+				</td>
+				<td style="width:500px; vertical-align: top; line-height: 130%">
+					<br><b>Fenderkiss (2 Cans)</b>
+					<br>When this vehicle makes a Smash Attack, this vehicle suffers a penalty of -2 attack dice. 
+					<br>
+					<br><b>Rear Drive (2 Cans)</b>
+					<br>This vehicle may pivot about the centre of its front edge, rather than the centre of the vehicle, when resolving Spin results.
+					<br>
+					<br><b>Delicate Touch (3 Cans)</b>
+					<br>This vehicle ignores the hazard icons on movement templates.
+					<br>
+					<br><b>Momentum (3 Cans)</b>
+					<br>When resolving Skid Dice, this vehicle may set aside a Slide or Spin result to re-roll a Skid Dice. 
+					This effect may be used multiple times. Skid Dice that are set aside must be resolved.
+					<br>
+					<br><b>Purring (6 Cans)</b>
+					<br>This vehicle does not gain more than 1 Hazard Token from Spin results each activation. 
+					This vehicle does not gain more than 1 Hazard Token from Slide results each activation.
+					This vehicle does not gain more than 1 Hazard Token from Hazard results each activation.
+					<br>
+					<br><b>Skiing (6 Cans)</b>
+					<br>If this vehicle has Handling 3 or higher, this vehicle may take 3 Hazard Tokens at the end of its Movement Step to be ignored by other vehicles during their Movement Steps until the start of this vehicle's next activation.
+					If, by ignoring this vehicle in a way, a vehicle's Final Position would overlap it, move that vehicle backwards along their movement template by the minimum amount to avoid overlapping any obstruction.
+				</td>
+				
+			</tr>
+		</table>
+</div>
+
+</td>
+</tr>
+</table>
+
+<br>
+<br>
+
+</div>
+
+</body>
+</html>
