@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Gaslands Team Builder</title>
 <style>
 table, th, td {
   border: 1px solid black;
@@ -170,12 +171,31 @@ td.center {
 <div class="DivMargin">
 <br>
 
-
-
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+		<table style="width:1300px; border: hidden;">
+			<tr>
+				<th>Orientation</th>
+				<th>Smash Attack Dice</th> 
+			</tr>
+			<tr>
+				<td style="width:180px; vertical-align: top; line-height: 130%;" class="center">Head On</td>
+				<td class="center">Sum of Current Gears. Each vehicle uses their current Gear plus the other participant's current Gear.</td>
+			</tr>
+			<tr>
+				<td style="width:180px; vertical-align: top; line-height: 130%;" class="center">T-Bone</td>
+				<td class="center">Vehicle's own Current Gear.</td>
+			</tr>
+			<tr>
+				<td style="width:180px; vertical-align: top; line-height: 130%;" class="center">Tailgate</td>
+				<td class="center">Difference in Current Gears: Each vehicle uses the faster participant's Current Gear minus the slower participant's Current Gear, to a minimum of zero.</td>
+			</tr>
+			<tr>
+		</table>
 </td>
 </tr>
 </table>
-</div>
 
 </div>
 
@@ -190,8 +210,8 @@ td.center {
 <table style="border-collapse: collapse; border: none; width:1300px;">
  <tr style="border: none;">
  <td style="border: none;">
-<h2>Placeholder</h2>
-Lorem ipsum
+<h2>Head On</h2>
+If the point of contact on <b>both</b> the vehicles is along their front edge, then the orientation of the Collision is Head-On.
 </td>
 </tr>
 </table>
@@ -200,8 +220,8 @@ Lorem ipsum
 <table style="border-collapse: collapse; border: none; width:1300px;">
  <tr style="border: none;">
  <td style="border: none;">
-<h2>Placeholder</h2>
-Lorem ipsum
+<h2>T-Bone</h2>
+If the point of contact on <b>either</b> vehicle is along its side edge, then the orientation of the Collision is a T-Bone.
 </td>
 </tr>
 </table>
@@ -209,14 +229,74 @@ Lorem ipsum
 <table style="border-collapse: collapse; border: none; width:1300px;">
  <tr style="border: none;">
  <td style="border: none;">
-<h2>Placeholder</h2>
-Lorem ipsum
+<h2>Tailgate</h2>
+If the point of contact on <b>either</b> vehicle is along the rear edge, then the orientation of the Collision is a Tailgate.
+If the orientation of the Collision is a Tailgate and the vehicle for which the point of contact is on the rear edge (the "front" vehicle)
+is in a higher Current Gear that the other vehicle, both vehicles must declare Evade as their reaction, as the front vehicle is moving away
+too fast for the other vehicle to ram it.
 </td>
 </tr>
 </table>
 
+</td>
+</tr>
+</table>
+
+</div>
 
 
+<div class="DivMargin">
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+		<table style="width:1300px; border: hidden;">
+			<tr>
+				<th colspan="2" class="center">
+					Smash Attack Weight Difference
+				</th>
+			</tr>
+			<tr>
+				<td style="width:650px; vertical-align: top; line-height: 130%;" class="center">1 Class Heavier</td>
+				<td class="center">+2 attack dice</td>
+			</tr>
+			<tr>
+				<td style="width:650px; vertical-align: top; line-height: 130%;" class="center">2 Classes Heavier</td>
+				<td class="center">+4 attack dice.</td>
+			</tr>
+			<tr>
+				<td style="width:650px; vertical-align: top; line-height: 130%;" class="center">1  Class Lighter</td>
+				<td class="center">-1  attack die</td>
+			</tr>
+			<tr>
+				<td style="width:650px; vertical-align: top; line-height: 130%;" class="center">2  Classes Lighter</td>
+				<td class="center">-2  attack dice</td>
+			</tr>
+			<tr>
+		</table>
+</td>
+</tr>
+</table>
+
+</div>
+
+
+
+<div class="DivMargin">
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+
+<table style="border-collapse: collapse; border: none; width:1300px;">
+ <tr style="border: none;">
+ <td style="border: none;">
+<h2>Hazards</h2>
+All vehicles involved in a Collision gains 2 Hazard Tokens.<br>
+If both participants in the Collision choose evade as their reaction, then all vehicles involved in the Collision gain 1 Hazard Token instead.
+</td>
+</tr>
+</table>
 
 </td>
 </tr>
