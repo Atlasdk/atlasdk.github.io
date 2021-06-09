@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head> 
+<title>Gaslands Team Builder</title>
+<style>
+
+nav {    
+  display: block;
+  text-align: center;
+}
+nav ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+.nav a {
+  display:block; 
+  background: #111; 
+  color: #fff; 
+  text-decoration: none;
+  padding: 0.8em 1.8em;
+  text-transform: uppercase;
+  font-size: 80%;
+  letter-spacing: 2px;
+  text-shadow: 0 -1px 0 #000;
+  position: relative;
+}
+.nav{  
+  vertical-align: top; 
+  display: inline-block;
+  box-shadow: 
+    1px -1px -1px 1px #000, 
+    -1px 1px -1px 1px #fff, 
+    0 0 6px 3px #fff;
+  border-radius:6px;
+}
+.nav li {
+  position: relative;
+}
+.nav > li { 
+  float: left; 
+  border-bottom: 4px #aaa solid; 
+  margin-right: 1px; 
+} 
+.nav > li > a { 
+  margin-bottom: 1px;
+  box-shadow: inset 0 2em .33em -0.5em #555; 
+}
+.nav > li:hover, 
+.nav > li:hover > a { 
+  border-bottom-color: orange;
+}
+.nav li:hover > a { 
+  color:orange; 
+}
+.nav > li:first-child { 
+  border-radius: 4px 0 0 4px;
+} 
+.nav > li:first-child > a { 
+  border-radius: 4px 0 0 0;
+}
+.nav > li:last-child { 
+  border-radius: 0 0 4px 0; 
+  margin-right: 0;
+} 
+.nav > li:last-child > a { 
+  border-radius: 0 4px 0 0;
+}
+.nav li li a { 
+  margin-top: 1px;
+}
+
+/* submenu positioning*/
+.nav ul {
+  position: absolute;
+  white-space: nowrap;
+  border-bottom: 5px solid  orange;
+  z-index: 1;
+  left: -99999em;
+}
+.nav > li:hover > ul {
+  left: auto;
+  margin-top: 5px;
+  min-width: 100%;
+}
+.nav > li li:hover > ul { 
+  left: 100%;
+  margin-left: 1px;
+  top: -1px;
+}
+/* arrow hover styling */
+.nav > li > a:first-child:nth-last-child(2):before { 
+  border-top-color: #aaa; 
+}
+.nav > li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent; 
+  border-bottom-color: orange; 
+  margin-top:-5px
+}
+.nav li li > a:first-child:nth-last-child(2):before {  
+  border-left-color: #aaa; 
+  margin-top: -5px
+}
+.nav li li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent; 
+  border-right-color: orange;
+  right: 10px; 
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 7px;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+	
+#car1_upgrade5_label {
+	display: none;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}
+	
+#car1_upgrade5_select {
+	display: none;
+	padding: 7px;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}
+	
+#car1_upgrade6_label {
+	display: none;
+	padding: 7px;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}	
+	
+	
+#car1_upgrade6_select {
+	display: none;
+	padding: 7px;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}	
+	
+#car1_upgrade7_label {
+	display: none;
+	padding: 7px;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}	
+	
+	
+#car1_upgrade7_select {
+	display: none;
+	padding: 7px;
+	border-collapse: collapse;
+	border-spacing: 15px;
+	white-space: nowrap;
+	}	
+	
+	
+.DivMargin {
+	margin: auto;
+	width: 100%;
+	}
+	
+.WeaponsTableDiv {
+	margin: auto;
+	border-collapse: collapse;
+	line-height: 130%
+	
+	}	
+	
+	
+#DivShowCar1 {
+
+   }
+	
+#DivShowCar2 {
+   display: none;
+   }
+
+#DivShowCar3 {
+   display: none;
+   }
+   
+#DivShowCar4 {
+   display: none;
+   }
+
+#CarNameTable {
+  border: none;
+  border-collapse: collapse;
+   }	
+	
+#testDIV {
+  display: none;
+  } 
+
+
+table.round {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: solid black 2px;
+  border-radius: 8px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+table.round1 {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: solid black 2px;
+  border-radius: 8px;
+ }
+  
+table.round2 {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: solid black 2px;
+  border-radius: 8px;
+ }  
+
+td.center {
+	text-align: center;
+  }
+  
+.stats {
+	width: 240px;
+	border: none;
+}
+
+
+.stats2 {
+	border: none;
+	text-align: left;
+	
+}
+
+.stats3 {
+	border: none;
+	text-align: right;
+	
+}
+
+#car1_button_reset {
+	background-color: lightgrey;
+	color: black;
+	border: none;
+	padding: 15px 52px;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+}
+
+#car2_button_reset {
+	background-color: lightgrey;
+	color: black;
+	border: none;
+  	padding: 15px 52px;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+}
+
+#car3_button_reset {
+	background-color: lightgrey;
+	color: black;
+	border: none;
+  	padding: 15px 52px;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+}
+
+#car4_button_reset {
+	background-color: lightgrey;
+	color: black;
+	border: none;
+  	padding: 15px 52px;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+}
+
+#headline {
+	font-size: 35px;
+}
+
+
+</style>
+
+</head>
+
+<body style="background-color:lightgrey">
+
+<nav>
+  <ul class="nav">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./Sponsors.html">Sponsors</a>
+      <ul>
+        <li><a href="#">Rutherford</a></li>
+        <li><a href="#">Miyazaki</a></li>
+        <li><a href="#">Mishkin</a></li>
+        <li><a href="#">Idris</a></li>
+		<li><a href="#">Slime</a></li>
+		<li><a href="#">The Warden</a></li>
+		<li><a href="#">Scarlett</a></li>
+		<li><a href="#">Highway Patrol</a></li>
+		<li><a href="#">Verney</a></li>
+		<li><a href="#">Maxxine</a></li>
+		<li><a href="#">The Order of the Inferno</a></li>
+		<li><a href="#">Beverly, The Devil on the Highway</a></li>
+		<li><a href="#">Rusty's Bootleggers</a></li>
+      </ul>
+    </li>
+	<li><a href="./Vehicles.html">Vehicles</a></li>
+    <li><a href="#">Weapons</a>
+      <ul>
+        <li><a href="./Weapons.html">Weapons</a></li>
+        <li><a href="./Crewweapons.html">Crew Weapons</a></li>
+        <li><a href="./Droppedweapons.html">Dropped Weapons</a></li>
+        <li><a href="./Weaponspecialrules.html">Special Rules</a></li>
+      </ul>
+    </li>
+    <li><a href="./Perks.html">Perks</a></li>
+    <li><a href="./Upgrades.html">Upgrades</a></li>
+    <li><a href="./Gearphases.html">Gear Phases</a></li>
+	<li><a href="./Collisions.html">Collisions</a></li>
+	<li><a href="./Print.html">Print</a></li>
+  </ul>
+</nav>
+
+<p style="text-align: center; margin-bottom: 0; font-size: 34px;">
+<b>Sponsors</b>
+</p>
+
+<br> 
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+			<table style="width:1300px; border: hidden;">
+			  <tr> 
+				<th colspan="9" class="center">Rutherford</th>
+			  </tr>
+			</table>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+			<table style="width:1300px; border: hidden;">
+			  <tr> 
+				<th colspan="9" class="center">Myazaki</th>
+			  </tr>
+			</table>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+			<table style="width:1300px; border: hidden;">
+			  <tr> 
+				<th colspan="9" class="center">Mishkin</th>
+			  </tr>
+			</table>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+			<table style="width:1300px; border: hidden;">
+			  <tr> 
+				<th colspan="9" class="center">Idris</th>
+			  </tr>
+			</table>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+			<table style="width:1300px; border: hidden;">
+			  <tr> 
+				<th colspan="9" class="center">Slime</th>
+			  </tr>
+			</table>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+			<table style="width:1300px; border: hidden;">
+			  <tr> 
+				<th colspan="9" class="center">Mishkin</th>
+			  </tr>
+			</table>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+			<table style="width:1300px; border: hidden;">
+			  <tr> 
+				<th colspan="9" class="center">The Warden</th>
+			  </tr>
+			</table>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+			<table style="width:1300px; border: hidden;">
+			  <tr> 
+				<th colspan="9" class="center">Scarlett</th>
+			  </tr>
+			</table>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+			<table style="width:1300px; border: hidden;">
+			  <tr> 
+				<th colspan="9" class="center">Highway Patrol</th>
+			  </tr>
+			</table>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+			<table style="width:1300px; border: hidden;">
+			  <tr> 
+				<th colspan="9" class="center">Verney</th>
+			  </tr>
+			</table>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+			<table style="width:1300px; border: hidden;">
+			  <tr> 
+				<th colspan="9" class="center">Maxxine</th>
+			  </tr>
+			</table>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+			<table style="width:1300px; border: hidden;">
+			  <tr> 
+				<th colspan="9" class="center">The Order of the Inferno</th>
+			  </tr>
+			</table>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+			<table style="width:1300px; border: hidden;">
+			  <tr> 
+				<th colspan="9" class="center">Beverly, The Devil on the Highway</th>
+			  </tr>
+			</table>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table class="round" style="background-color:white">
+	<tr style="border: none">
+		<td style="border: none">
+			<table style="width:1300px; border: hidden;">
+			  <tr> 
+				<th colspan="9" class="center">Rusty's Bootleggers</th>
+			  </tr>
+			</table>
+</td>
+</tr>
+</table>
+
+<br>
+
+</body>
+</html>
