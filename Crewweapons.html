@@ -3,6 +3,110 @@
 <head>
 <title>Gaslands Team Builder</title>
 <style>
+
+nav {    
+  display: block;
+  text-align: center;
+}
+nav ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+.nav a {
+  display:block; 
+  background: #111; 
+  color: #fff; 
+  text-decoration: none;
+  padding: 0.8em 1.8em;
+  text-transform: uppercase;
+  font-size: 80%;
+  letter-spacing: 2px;
+  text-shadow: 0 -1px 0 #000;
+  position: relative;
+}
+.nav{  
+  vertical-align: top; 
+  display: inline-block;
+  box-shadow: 
+    1px -1px -1px 1px #000, 
+    -1px 1px -1px 1px #fff, 
+    0 0 6px 3px #fff;
+  border-radius:6px;
+}
+.nav li {
+  position: relative;
+}
+.nav > li { 
+  float: left; 
+  border-bottom: 4px #aaa solid; 
+  margin-right: 1px; 
+} 
+.nav > li > a { 
+  margin-bottom: 1px;
+  box-shadow: inset 0 2em .33em -0.5em #555; 
+}
+.nav > li:hover, 
+.nav > li:hover > a { 
+  border-bottom-color: orange;
+}
+.nav li:hover > a { 
+  color:orange; 
+}
+.nav > li:first-child { 
+  border-radius: 4px 0 0 4px;
+} 
+.nav > li:first-child > a { 
+  border-radius: 4px 0 0 0;
+}
+.nav > li:last-child { 
+  border-radius: 0 0 4px 0; 
+  margin-right: 0;
+} 
+.nav > li:last-child > a { 
+  border-radius: 0 4px 0 0;
+}
+.nav li li a { 
+  margin-top: 1px;
+}
+
+/* submenu positioning*/
+.nav ul {
+  position: absolute;
+  white-space: nowrap;
+  border-bottom: 5px solid  orange;
+  z-index: 1;
+  left: -99999em;
+}
+.nav > li:hover > ul {
+  left: auto;
+  margin-top: 5px;
+  min-width: 100%;
+}
+.nav > li li:hover > ul { 
+  left: 100%;
+  margin-left: 1px;
+  top: -1px;
+}
+/* arrow hover styling */
+.nav > li > a:first-child:nth-last-child(2):before { 
+  border-top-color: #aaa; 
+}
+.nav > li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent; 
+  border-bottom-color: orange; 
+  margin-top:-5px
+}
+.nav li li > a:first-child:nth-last-child(2):before {  
+  border-left-color: #aaa; 
+  margin-top: -5px
+}
+.nav li li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent; 
+  border-right-color: orange;
+  right: 10px; 
+}
+
 table, th, td {
   border: 1px solid black;
   padding: 7px;
@@ -18,65 +122,6 @@ table.center {
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: #333; 
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.subnav {
-  float: left;
-  overflow: hidden;
-}
-
-.subnav .subnavbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: tan;
-  color: black;
-}
-
-.subnav-content {
-  display: none;
-  position: absolute;
-  left: 0;
-  background-color: tan;
-  width: 100%;
-  z-index: 1;
-}
-
-.subnav-content a {
-  float: left;
-  color: black;
-  text-decoration: none;
-}
-
-.subnav-content a:hover {
-  background-color: #eee;
-  color: black;
-}
-
-.subnav:hover .subnav-content {
-  display: block;
 }
 
 .DivMargin {
@@ -113,55 +158,33 @@ td.center {
 
 <body style="background-color:lightgrey">
 
-<div class="navbar">
-  <a href="./index.html">Home</a>
-	<div class="subnav">
-		<button class="subnavbtn">Sponsors<i class="fa fa-caret-down"></i></button>
-		<div class="subnav-content">
-		  <a href="#Rutherford">Rutherford</a>
-		  <a href="#Miyazaki">Miyazaki</a>
-		  <a href="#Mishkin">Mishkin</a>
-		  <a href="#Idris">Idris</a>
-		  <a href="#Slime">Slime</a>
-		  <a href="#TheWarden">The Warden</a>
-		  <a href="#Scarlett">Scarlett</a>
-		  <a href="#HighwayPatrol">Highway Patrol</a>
-		  <a href="#Verney">Verney</a>
-		  <a href="#Maxxine">Maxxine</a>
-		  <a href="#TheOrderoftheInferno">The Order of the Inferno</a>
-		  <a href="#BeverlyTheDevilontheHighway">Beverly, The Devil on the Highway</a>
-		  <a href="#company">Rusty's Bootleggers</a>
-		</div>
-	</div>
-	<div>
-		<a href="./Vehicles.html">Vehicles</a>
-	</div>
-	<div class="subnav">
-		<button class="subnavbtn">Weapons<i class="fa fa-caret-down"></i></button>
-		<div class="subnav-content">
-		  <a href="./Weapons.html">Weapons</a>
-		  <a href="./Crewweapons.html">Crew Weapons</a>
-		  <a href="./Droppedweapons.html">Dropped Weapons</a>
-		  <a href="./Weaponspecialrules.html">Special rules</a>
-		</div>
-	</div>
-	<div>
-		<a href="./Perks.html">Perks</a>
-	</div>
-	<div>
-		<a href="./Upgrades.html">Upgrades</a>
-	</div>
-	<div>
-		<a href="./Gearphases.html">Gear Phases</a>
-	</div>
-	<div>
-		<a href="./Collisions.html">Collisions</a>
-	</div>
-	<div>
-		<a href="./Print.html">Print</a>
-	</div>
-</div>
-
+<nav>
+  <ul class="nav">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="#">Sponsors</a>
+      <ul>
+        <li><a href="#">Rutherford</a></li>
+        <li><a href="#">Miyazaki</a></li>
+        <li><a href="#">Mishkin</a></li>
+        <li><a href="#">item</a></li>
+      </ul>
+    </li>
+	<li><a href="./Vehicles.html">Vehicles</a></li>
+    <li><a href="#">Weapons</a>
+      <ul>
+        <li><a href="./Weapons.html">Weapons</a></li>
+        <li><a href="./Crewweapons.html">Crew Weapons</a></li>
+        <li><a href="./Droppedweapons.html">Dropped Weapons</a></li>
+        <li><a href="./Weaponspecialrules.html">Special Rules</a></li>
+      </ul>
+    </li>
+    <li><a href="./Perks.html">Perks</a></li>
+    <li><a href="./Upgrades.html">Upgrades</a></li>
+    <li><a href="./Gearphases.html">Gear Phases</a></li>
+	<li><a href="./Collisions.html">Collisions</a></li>
+	<li><a href="./Print.html">Print</a></li>
+  </ul>
+</nav>
 
 <p id="headline" style="text-align: center; margin-bottom: 0;">
 <b>Crew Weapons</b>
